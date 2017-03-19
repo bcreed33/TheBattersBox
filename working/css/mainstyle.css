@@ -1,0 +1,279 @@
+/*different sections////////////////////*/
+.section1{
+    background-color: beige;
+    height:auto;
+    min-height: 400px;
+    padding: 30px;
+}
+.section2{
+    background-color:azure;
+    height:auto;
+    min-height: 400px;
+    padding: 30px;
+}
+.imgSection1{
+       background: url(../img/beertaps.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    height:350px;
+}
+.imgSection2{
+       background: url(../img/sportsBarPeople.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    height:350px;
+        bottom: 0;
+}
+
+
+
+
+/*hero section////////////////////*/
+#heroBackgroundImage1{
+   background-color: blue;
+   background: url(../img/hero1.image.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    height: 750px;
+}
+#heroContent1{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+#heroContent1 h3{
+    text-align: center;
+    color:white;
+}
+.mainHeroLogo1{
+    display: block;
+    width: 80%;
+    max-width: 175px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 75px;
+}
+
+#heroBackgroundImage{
+overflow: hidden;
+    height:600px;
+    background:url(/img/barbackground.jpg)no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.heroBox{
+    display: block;
+    width: 100%;
+    max-width:1000px;
+    height: auto;
+    min-height:600px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.logo{
+    height:200px;
+    width:100%;
+    background-image: url(/img/logo1.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:25%;
+    margin-top: -100px;
+    z-index: 9999;
+}
+
+.beer{
+    width:100%;
+    max-width:500px;
+    height:400px;
+    
+    background-image: url(/img/herobeer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    bottom:35px;
+   left:5%;
+    
+    
+}
+
+.burger{
+    width:600px;
+    height:300px;
+    
+    background-image: url(/img/heroBurger.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    bottom:0;
+    left:30%;
+    
+    
+}
+@media (max-width: 900px) {
+    .beer, .burger{
+        left:0;
+        right:0;
+        
+    }
+    
+}
+@media (max-width: 550px) {
+    #heroBackgroundImage{
+        height: 500px;
+    }
+     .beer{
+        background-position: right center;
+        left:0
+    }
+    .burger{
+        /*width:400px;
+        left:1px;*/
+        display: none;
+    }
+
+
+
+}
+
+/*end hero section////////////////////*/
+/*Global styles///////////*/
+h1{
+    font-size:4em;
+}
+h2{
+    font-size: 2.5em;
+}
+h3{
+    font-size: 1.5em;
+}
+.page-header{
+    display: block;
+    width: 100%;
+    height: 350px;
+}
+.button1{
+    background-color: #ef7622;
+    color:white;
+    width: 100px;
+    min-height: 45px;
+}
+.button1:hover{
+
+    background-color:lightblue;
+    color:black;
+
+}
+.blackOpcity{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(1,1,1,.5);
+}
+/*end of Global styles///////////*/
+
+
+
+
+
+
+
+/*Index Styles////////////////////*/
+.drinksCTA{
+    font-size: 3em;
+    color: #fff;
+    padding-top: 125px;
+}
+
+.quotes{  margin:0 auto;
+  padding:0;
+  text-align: center;
+  list-style-type: none;
+  width: 100%;
+  position:relative;
+background-color: rgba(1,1,1,.5);}
+
+.blockquote{
+    height: 100%;
+    width: 100%;
+    color:white;
+    font-size:2em;
+    text-align: center;
+    
+}
+.personQuote{
+    padding-top: 75px;
+    font-size: 28px;
+    font-style: italic;
+}
+.glyphicon-cutlery, .glyphicon-glass, .glyphicon-education, .glyphicon-cd,.glyphicon-calendar,.glyphicon-search,.glyphicon-book{
+    font-size:100px;
+    clear: both;
+    text-align: center;
+    width: 100%;
+}
+/*end Index Styles////////////////////*/
+
+
+/*Menu page Styles////////////////////*/
+.menu-page-header{
+   
+   background: url(../img/burger1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    height:350px;
+    
+}.menu-page-header h1{
+    color:#fff;
+    font-weight: bold;
+}
+.menu-page-header{}
+.foodlist li{
+    max-width: 300px;
+    width:100%;
+    height: 20px;
+    border-bottom: 1px dotted black;
+    background-color: white;
+    
+}
+.foodName, .foodPrice{
+        height: 22px;
+    background-color: white;    
+}
+.foodName{
+    float:left;
+}
+.foodPrice{
+    float: right;
+}
+/*end menu Styles////////////////////*/
+
+
+
+
+
+
+
+
+/*Footer////////////////////*/
+#footer{
+    min-height: 200px;
+    padding: 50px 0;
+    background-color: #333;
+    color:white;
+        position: relative;
+    z-index: 9;
+}
