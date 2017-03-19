@@ -43,25 +43,25 @@
 
 
 
-$(document).ready(function(){   
+//$(document).ready(function(){   
     
     
     
-    $(window).scroll(function(){
-    var wScroll = $(this).scrollTop();    
+   // $(window).scroll(function(){
+   // var wScroll = $(this).scrollTop();    
         
-    if(wScroll > $('.portfolioSection').offset().top - ($(window).height()/2)){
-        console.log('its working now');
+   //if(wScroll > $('.portfolioSection').offset().top - ($(window).height()/2)){
+    //    console.log('its working now');
        // $('.portfolioSection img').each(function(){
         //$('.portfolioSection img').addClass('showPortImg');
             
-            });
-    }    
+       //    });
+    //}    
         
         
-});
+////});
     
-});
+//});
 
 
 

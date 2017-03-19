@@ -3,14 +3,24 @@ var gulp = require('gulp');
 
 
 
-var cleanCSS = require('gulp-clean-css');
+//var cleanCSS = require('gulp-clean-css');
  
-gulp.task('mincss', function() {
-  return gulp.src('working/css/*.css')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('css/'));
-});
+//gulp.task('mincss', function() {
+//  return gulp.src('working/css/*.css')
+//    .pipe(cleanCSS({compatibility: 'ie8'}))
+ //   .pipe(gulp.dest('css/'));
+//});
 
+
+var cleanCSS = require('gulp-clean-css');
+ var concatCss = require('gulp-concat-css');
+gulp.task('mincss', function() {
+  return gulp.src(['working/css/reset.css',
+                  'working/css/mainstyle.css'])
+  .pipe(concatCss("allbundle.css"))
+   .pipe(cleanCSS())
+.pipe(gulp.dest('css/'));
+});
 
 
 
