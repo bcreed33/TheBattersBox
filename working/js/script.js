@@ -81,3 +81,20 @@ $(document).ready(function(){
     
 });
 
+
+
+
+
+
+
+$(document).ready(function(){
+$(window).scroll(function(){
+var topscroll =25;
+if($(window).scrollTop() >= topscroll){
+$('#secondaryNav').addClass("secondaryNavPosition");
+}
+
+});
+
+});    
+

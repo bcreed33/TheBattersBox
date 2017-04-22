@@ -61,9 +61,9 @@
 }
 
 #heroBackgroundImage{
-overflow: hidden;
+    overflow: hidden;
     height:600px;
-    background:url(/img/barbackground.jpg)no-repeat center center fixed; 
+    background:url(../img/barbackground.jpg)no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -82,7 +82,7 @@ overflow: hidden;
 .logo{
     height:200px;
     width:100%;
-    background-image: url(/img/logo1.png);
+    background-image: url(../img/logo1.png);
     background-position:center;
     background-repeat: no-repeat;
     position: absolute;
@@ -95,8 +95,7 @@ overflow: hidden;
     width:100%;
     max-width:500px;
     height:400px;
-    
-    background-image: url(/img/herobeer.png);
+    background-image: url(../img/herobeer.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -111,7 +110,7 @@ overflow: hidden;
     width:600px;
     height:300px;
     
-    background-image: url(/img/heroBurger.png);
+    background-image:url(../img/heroBurger.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -181,6 +180,44 @@ h3{
     height: 100%;
     background: rgba(1,1,1,.5);
 }
+
+#secondaryNav{
+    width:10%;
+    max-width: 175px;
+    height: auto;
+    position:fixed;
+     top:175;
+    left:-300;
+    display: block;
+    background-color: red;
+    font-size: 20px;
+}
+.secondaryNavPosition{
+    left:0 !important;
+    transition: all 1s ease-in;
+}
+.sideNavOption{
+    width:100%;
+    height: 50px;
+    display: block;
+    text-align: center;
+}
+@media (max-width: 900px) {
+    #secondaryNav{
+        width: 100%;
+        max-width: 100%;
+        height: 45px;
+        position:inherit;
+ 
+    }
+    .sideNavOption{
+        width: 25%;
+        float: left;
+        min-height: 45px;
+    }
+}
+
+
 /*end of Global styles///////////*/
 
 
@@ -228,7 +265,6 @@ background-color: rgba(1,1,1,.5);}
 
 /*Menu page Styles////////////////////*/
 .menu-page-header{
-   
    background: url(../img/burger1.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -249,8 +285,16 @@ background-color: rgba(1,1,1,.5);}
     background-color: white;
     
 }
+.menuItemSection{
+    width: 100%;
+    height:300px;
+    display: block;
+    padding: 15px;
+    margin: 10px;
+    clear: both;
+}
 .foodName, .foodPrice{
-        height: 22px;
+    height: 22px;
     background-color: white;    
 }
 .foodName{
@@ -260,7 +304,19 @@ background-color: rgba(1,1,1,.5);}
     float: right;
 }
 /*end menu Styles////////////////////*/
-
+/*drink Styles////////////////////*/
+.onTapHeader{
+    width:100%;
+    height: 250px;
+   background: url(../img/sportsBarPeople.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    text-align: center;
+    color:blue;  
+}
+/*end drink Styles////////////////////*/
 
 
 
