@@ -13,12 +13,9 @@
      
 
   
-<!-- Bootstrap Css -->
+<!-- Css -->
 <link href="css/bootstrap.min.css" rel="stylesheet">    
-<!-- all Css
- <link href="css/reset.css" rel="stylesheet">
-<link href="css/mainstyle.css" rel="stylesheet"> -->
-<link href="css/allbundle.css" rel="stylesheet">    
+<link href="css/cssbundle.css" rel="stylesheet">    
 </head>
 
 <body>
@@ -66,41 +63,64 @@
     
     
     
-    <div id="secondaryNav">
-    <a href="#" class="sideNavOption">Beer</a>
-    <a href="#" class="sideNavOption">Cocktails</a>
-    <a href="#" class="sideNavOption">Whiskey</a>
-    <a href="#" class="sideNavOption">Wine</a>
-
+<div class="secondaryNav">
+    <a href="#applink" class="sideNavOption">Apps</a>
+    <a href="#saladlink" class="sideNavOption">Salads</a>
+    <a href="#tacolink" class="sideNavOption">Tacos</a>
+    <a href="#hoagielink" class="sideNavOption">Hoagies</a>
+    <a href="#burgerlink" class="sideNavOption">Burger</a>
 </div>   
     
-<div class="page-header menu-page-header">
+<div class="page-header menu-page-header" id="applink">
     <div class="row text-center">
     <h1>Menu</h1>
     </div>
 </div>    
 
     
- <div class="containe-fluid section1">
-     <div class="container ">
-        <div class="row">
-            <h2>Apps</h2>
-           <!--<ul class="foodList">
-            <li><p class="foodName"></p><p class="foodPrice"></p></li>
-            </ul>-->
-            <div id="apps" class="menuItemSection"></div>
-            <h2>Salads</h2>
-            <div id="salad" class="menuItemSection"></div>
-            <h2>Tacos</h2>
-            <div id="taco" class="menuItemSection"></div>
-            <h2>Hoagies</h2>
-            <div id="hoagie" class="menuItemSection"></div>
-            <h2>Burgers</h2>
-            <div id="burger" class="menuItemSection"></div>
-         
-         
-         </div></div></div>
+<div class="containe-fluid section1">
+    <div class="container">
+        <h2>Apps</h2>
+        <div id="apps" class="menuItemSection"></div>
+    </div>
+</div>
     
+    <div class="midPageImgSection" id="saladlink"></div>
+    
+<div class="containe-fluid section1">
+    <div class="container">
+        <h2>Salads</h2>
+        <div id="salad" class="menuItemSection"></div>
+    </div>
+</div>
+    
+    <div class="midPageImgSection" id="tacolink"></div>
+    
+<div class="containe-fluid section1">
+    <div class="container">
+        <h2>Tacos</h2>
+        <div id="taco" class="menuItemSection"></div>
+    </div>
+</div>
+    
+    <div class="midPageImgSection" id="hoagielink"></div> 
+    
+<div class="containe-fluid section1">
+    <div class="container">
+        <h2>Hoagies</h2>
+        <div id="hoagie" class="menuItemSection"></div>
+    </div>
+</div>
+    
+    <div class="midPageImgSection" id="burgerlink"></div>
+    
+<div class="containe-fluid section1">
+    <div class="container">
+        <h2>Burgers</h2>
+        <div id="burger" class="menuItemSection"></div>
+    </div>
+</div>
+
     
     
   
@@ -191,9 +211,7 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <!--All other js files--> 
-   
-        <script src="js/allbundle.js"></script> 
-    <script src="js/menu.js"></script>
-    <script src="js/menuscript.js"></script>
+<script src="js/allscript.js"></script> 
+<script src="js/allfood.js"></script>
 </body>
 </html>

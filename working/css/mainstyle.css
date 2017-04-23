@@ -2,32 +2,22 @@
 .section1{
     background-color: beige;
     height:auto;
-    min-height: 400px;
-    padding: 30px;
+    /*min-height: 400px;*/
+    padding:50px;
 }
 .section2{
     background-color:azure;
     height:auto;
-    min-height: 400px;
-    padding: 30px;
+    /*min-height: 400px;*/
+    padding:50px;
 }
-.imgSection1{
-       background: url(../img/beertaps.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-    height:350px;
+
+.midPageImgSection{
+    width: 100%;
+    height:200px; 
+    background-color: green;
 }
-.imgSection2{
-       background: url(../img/sportsBarPeople.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-    height:350px;
-        bottom: 0;
-}
+
 
 
 
@@ -157,10 +147,15 @@ h2{
 h3{
     font-size: 1.5em;
 }
+.navbar{
+    margin-bottom: 0px;
+}
 .page-header{
     display: block;
     width: 100%;
     height: 350px;
+    margin: 0;
+    padding: 0;
 }
 .button1{
     background-color: #ef7622;
@@ -181,13 +176,13 @@ h3{
     background: rgba(1,1,1,.5);
 }
 
-#secondaryNav{
+.secondaryNav{
     width:10%;
     max-width: 175px;
     height: auto;
     position:fixed;
      top:175;
-    left:-300;
+    left:-175;
     display: block;
     background-color: red;
     font-size: 20px;
@@ -202,19 +197,28 @@ h3{
     display: block;
     text-align: center;
 }
+ 
+
 @media (max-width: 900px) {
-    #secondaryNav{
+
+    .secondaryNav{
         width: 100%;
         max-width: 100%;
         height: 45px;
-        position:inherit;
- 
+        top:0;
+        left: 0;
+        position: inherit;
+   
     }
     .sideNavOption{
         width: 25%;
         float: left;
         min-height: 45px;
     }
+    .secondaryNavMobliePosition{
+    position:fixed;
+          
+}
 }
 
 
@@ -230,7 +234,23 @@ h3{
 .drinksCTA{
     font-size: 3em;
     color: #fff;
-    padding-top: 125px;
+    line-height: 165px;
+}
+.drinksCTAImgBG{
+       background: url(../img/beertaps.jpg) no-repeat center top fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ }
+.quotesImgBG{
+       background: url(../img/sportsBarPeople.jpg) no-repeat center top fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ height: 300px;
+    overflow: hidden;
 }
 
 .quotes{  margin:0 auto;
@@ -270,14 +290,14 @@ background-color: rgba(1,1,1,.5);}
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-    height:350px;
+    height:300px;
     
 }.menu-page-header h1{
     color:#fff;
     font-weight: bold;
+    line-height: 125px;
 }
-.menu-page-header{}
-.foodlist li{
+ .foodlist li{
     max-width: 300px;
     width:100%;
     height: 20px;
@@ -293,15 +313,28 @@ background-color: rgba(1,1,1,.5);}
     margin: 10px;
     clear: both;
 }
+.menuChoice{
+    width: 100%;
+    height: 45px;
+    display: block;
+    clear: both;
+    margin-bottom: 15px;
+ }
 .foodName, .foodPrice{
     height: 22px;
-    background-color: white;    
+     font-size:20px;
 }
 .foodName{
     float:left;
+    font-weight: bold;
 }
 .foodPrice{
     float: right;
+}
+.foodNote{
+    clear: both;
+    font-size: 14px;
+    height: auto;
 }
 /*end menu Styles////////////////////*/
 /*drink Styles////////////////////*/
@@ -319,7 +352,14 @@ background-color: rgba(1,1,1,.5);}
 /*end drink Styles////////////////////*/
 
 
-
+/*event page Styles////////////////////*/
+.eventPhoto{
+    width:300px;
+    height: auto;
+    margin: 0 auto;
+    
+}
+/*end event Styles////////////////////*/
 
 
 

@@ -34,15 +34,10 @@
             $('.burger').css({
         'transform': 'translate(0px, '+ wScroll/4 +'%)'
     });
+ });
     
 });
-    
-});
-
-
-
-
-
+ 
 //$(document).ready(function(){   
     
     
@@ -85,16 +80,45 @@ $(document).ready(function(){
 
 
 
-
-
+//Makes the secondary nav pop out after the user scrolls
 $(document).ready(function(){
 $(window).scroll(function(){
 var topscroll =25;
 if($(window).scrollTop() >= topscroll){
-$('#secondaryNav').addClass("secondaryNavPosition");
+$('.secondaryNav').addClass("secondaryNavPosition");
 }
+});
+});   
 
+
+//Adds a class to the secondary nav when the screen width is below 900px
+$(document).ready(function(){   
+$(window).on('resize', function() {
+    if($(window).width() < 900) {
+        $('.secondaryNav').addClass('secondaryNavMoblie');
+    }
+});
 });
 
-});    
+
+//Fixes the secondary nav to the top of the screen 
+$(document).ready(function(){ 
+$(window).scroll(function(){
+
+var sideMenuScroll =175;
+if($(window).scrollTop() >= sideMenuScroll){
+$('.secondaryNavMoblie').addClass("secondaryNavMobliePosition");
+}
+else {
+$('.secondaryNavMoblie').removeClass("secondaryNavMobliePosition");
+}; 
+});
+});
+
+
+
+
+$(window).scroll( function() {
+  console.log( $(this).scrollTop());
+});
 
