@@ -20,7 +20,25 @@
 </head>
 
 <body>
-<nav class="navbar navbar-default navbar-fixed-top ">
+    
+    
+    
+<div class="containe-fluid topBar">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm-6 col-xs-12">
+                <p>412-730-4265</p>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+                <p>567 Penn Ave Mt. Washington, PA 15231</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    
+<nav class="navbar navbar-default">
   <div class="container">
       
       <!--Need this for the mobile toggel button -->
@@ -32,8 +50,8 @@
         <span class="icon-bar"></span>
       </button>
         <!-- brand/logo image and link-->
-      <a class="navbar-brand" href="#">
-        <img alt="The Batters Box" src="...">
+      <a class="navbar-brand" href="index.html">
+        <img alt="The Batters Box" src="img/theBattersBoxNavLogo.png" class="navbarlogo">
       </a>
     </div>
       
@@ -79,22 +97,28 @@
 
     
     <div class="containe-fluid section1">
-    <div class="container ">
+    <div class="container">
         <div class="row text-center">
+            <div class="col-xs-12"> 
+        <h1>Welcome to The Box.</h1>
+        <p>The Batters Box is run by people just like you. We love sports, food and good drinks. </p>
+            </div></div>
+        
+        <div class="row text-center topthreeCTAs">
             <div class="col-xs-12 col-md-4">   
                 <h3>Menu</h3>
                 <span class="glyphicon glyphicon-book"></span>
-                <a href="menu.html"><button type="button" class="btn btn-default">Menu</button> </a>             
+                <a href="menu.html"><button type="button" class="btn btn-default button1">Menu</button> </a>             
             </div>
             <div class="col-xs-12 col-md-4">   
                 <h3>Catering</h3>
                 <span class="glyphicon glyphicon-calendar"></span>
-                <button type="button" class="btn btn-default button1">Middle</button>              
+                <a href="menu.html"><button type="button" class="btn btn-default button1">Catering</button>  </a>            
             </div>
             <div class="col-xs-12 col-md-4">   
                 <h3>Location</h3>
                 <span class="glyphicon glyphicon-search"></span>
-                <button type="button" class="btn btn-default">Middle</button>              
+                <a href="menu.html"><button type="button" class="btn btn-default button1">Location</button></a>              
             </div>
 
         </div>
@@ -104,21 +128,28 @@
     
 <div class="containe-fluid midPageImgSection drinksCTAImgBG">
     <div class="container blackOpcity">
+        <a href="drinks.html">
         <div class="row text-center">
-            <p class="drinksCTA">Check out our full Drink list<span class="glyphicon glyphicon-chevron-right"></span></p>
-        
-        
+            <p class="drinksCTA">
+                Check out our full Drink list<span class="glyphicon glyphicon-chevron-right"></span>
+            </p>
         </div>
+        </a>
     </div>
 </div>  
     
     
     <div class="containe-fluid section2">
+        
+        
+        
     <div class="container">
         <div class="row text-center">
             <div class="col-xs-12">
                 <h2>Weekly Specials</h2>
             </div>
+        </div>
+        <div class="row text-center specialsSection">
             <div class="col-xs-6 col-md-3">
                 <span class="glyphicon glyphicon-cutlery"></span>
                 <h3>Wing Tusdays</h3>
@@ -270,7 +301,8 @@
 <script src="js/bootstrap.min.js"></script>
 <!--All other js files--> 
  <script src="working/js/script.js"></script>
-     
+    
+
     
 </body>
 </html>

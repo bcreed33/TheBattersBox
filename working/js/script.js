@@ -77,7 +77,15 @@ $(document).ready(function(){
 });
 
 
-
+//Makes the secondary nav pop out after the user scrolls
+$(document).ready(function(){
+$(window).scroll(function(){
+var navStick =51;
+if($(window).scrollTop() >= navStick){
+$('.navbar-default').addClass("navbar-fixed-top");
+}else{$('.navbar-default').removeClass("navbar-fixed-top");}
+});
+});   
 
 
 //Makes the secondary nav pop out after the user scrolls

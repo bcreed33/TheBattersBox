@@ -1,15 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css?family=Bitter|Ubuntu');
+
+/*
+fonts
+
+
+headungs - bitter
+other - ubuntu
+
+Colors
+dark blue - #78909C  
+dark grey - #414242
+soft gold - #F9E79F  */
+
 /*different sections////////////////////*/
 .section1{
-    background-color: beige;
+    background-color:#fff ;
     height:auto;
-    /*min-height: 400px;*/
-    padding:50px;
+min-height: 400px;
+    padding:75px;
 }
 .section2{
-    background-color:azure;
+    background-color:#78909C;
     height:auto;
-    /*min-height: 400px;*/
-    padding:50px;
+    min-height: 400px;
+    padding:75px;
 }
 
 .midPageImgSection{
@@ -19,10 +34,168 @@
 }
 
 
+/*Global styles///////////*/
+h1{
+    font-size:4em;
+    text-decoration: underline;   
+    font-family: 'Bitter', serif;
+}
+h2{
+    font-size: 2.5em;
+    font-family: 'Bitter', serif;
+}
+h3{
+    font-size: 1.5em;
+    font-family: 'Bitter', serif;
+}
+p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+}
+a{
+    font-family: 'Ubuntu', sans-serif !important;
+}
+.hrcolor{
+    height: 2px;
+    background-color:#78909C;
+}
+.navbar{
+    margin-bottom: 0px;
+     background-color:#fff;
+    color:#fff;
+    border:none;
+    height: 75px;
+    border-bottom: 7px solid #78909C;
+}
+.nav .active a{
+    background-color:#fff !important;
+    border-bottom:#000 solid 7px;
+    color:#78909C !important;
+}
+.nav a{
+    color:#000 !important;
+    height: 75px;
+    min-width:100px !important;
+    line-height:45px !important;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing:1px;
+    transition: all .1s ease-in-out;
+}
+.nav a:hover{
+    
+    border-bottom:#F9E79F solid 7px;
+}
+.page-header{
+    display: block;
+    width: 100%;
+    height: 350px;
+    margin: 0;
+    padding: 0;
+}
+.button1{
+    background-color:#414242;
+    color:white;
+    width: 125px;
+    min-height: 45px;
+    font-size: 20px;
+    margin: 10px;
+    border: 1px #fff solid;
+    transition: all .2s ease-in-out;
+}
+.button1:hover{
+
+    background-color:lightblue;
+    color:black;
+
+}
+.topBar{
+    background-color:#414242;
+    min-height:50px;
+    height: auto;
+}
+.topBar p{
+    color:#fff;
+     padding: 15px 0;
+    font-size: 14px;
+}
+.blackOpcity{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(1,1,1,.5);
+}
+
+.secondaryNav{
+    width:10%;
+    max-width:200px;
+    height:300px;
+    position:fixed;
+     top:175;
+    left:-175;
+    display: block;
+ 
+    font-size: 20px;
+}
+.secondaryNavPosition{
+    left:0 !important;
+    transition: all 1s ease-in;
+}
+.sideNavOption{
+    width:100%;
+    width: 175px;
+    height: 50px;
+    font: 20px;
+    display: block;
+    text-align: center;
+           background-image: -webkit-linear-gradient(90deg,#000 0,transparent);
+    background-image: linear-gradient(90deg,#000 0,transparent);
+        margin: 5px 0;
+    line-height: 50px;
+    color: #fff;
+    transition: all .1s ease-in-out;
+}
+.sideNavOption:hover{
+    width: 200px!important;
+    font-size: 24px;
+    color:#fff;
+}
+
+@media (max-width: 900px) {
+
+    .secondaryNav{
+        width: 100%;
+        max-width: 100%;
+        height: 45px;
+        top:0;
+        left: 0;
+        position: inherit;
+   
+    }
+    .sideNavOption{
+        width: 25%;
+        float: left;
+        min-height: 45px;
+    }
+    .secondaryNavMobliePosition{
+    position:fixed;
+          
+}
+}
+
+
+/*end of Global styles///////////*/
 
 
 
 /*hero section////////////////////*/
+.navbarlogo{
+   
+}
+.navbar-brand{
+    padding: 10px 15px !important;
+}
 #heroBackgroundImage1{
    background-color: blue;
    background: url(../img/hero1.image.jpg) no-repeat center center fixed; 
@@ -44,7 +217,7 @@
 .mainHeroLogo1{
     display: block;
     width: 80%;
-    max-width: 175px;
+    max-width:250px;
     height: auto;
     margin: 0 auto;
     padding-top: 75px;
@@ -70,13 +243,13 @@
     overflow: hidden;
 }
 .logo{
-    height:200px;
+    height:285px;
     width:100%;
-    background-image: url(../img/logo1.png);
+    background-image: url(../img/theBattersBoxLogo.png);
     background-position:center;
     background-repeat: no-repeat;
     position: absolute;
-    top:25%;
+    top:27%;
     margin-top: -100px;
     z-index: 9999;
 }
@@ -91,7 +264,7 @@
     background-size: contain;
     position: absolute;
     bottom:35px;
-   left:5%;
+   left:7%;
     
     
 }
@@ -106,7 +279,8 @@
     background-size: contain;
     position: absolute;
     bottom:0;
-    left:30%;
+    left:28%;
+    z-index: 10000;
     
     
 }
@@ -137,92 +311,6 @@
 }
 
 /*end hero section////////////////////*/
-/*Global styles///////////*/
-h1{
-    font-size:4em;
-}
-h2{
-    font-size: 2.5em;
-}
-h3{
-    font-size: 1.5em;
-}
-.navbar{
-    margin-bottom: 0px;
-}
-.page-header{
-    display: block;
-    width: 100%;
-    height: 350px;
-    margin: 0;
-    padding: 0;
-}
-.button1{
-    background-color: #ef7622;
-    color:white;
-    width: 100px;
-    min-height: 45px;
-}
-.button1:hover{
-
-    background-color:lightblue;
-    color:black;
-
-}
-.blackOpcity{
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: rgba(1,1,1,.5);
-}
-
-.secondaryNav{
-    width:10%;
-    max-width: 175px;
-    height: auto;
-    position:fixed;
-     top:175;
-    left:-175;
-    display: block;
-    background-color: red;
-    font-size: 20px;
-}
-.secondaryNavPosition{
-    left:0 !important;
-    transition: all 1s ease-in;
-}
-.sideNavOption{
-    width:100%;
-    height: 50px;
-    display: block;
-    text-align: center;
-}
- 
-
-@media (max-width: 900px) {
-
-    .secondaryNav{
-        width: 100%;
-        max-width: 100%;
-        height: 45px;
-        top:0;
-        left: 0;
-        position: inherit;
-   
-    }
-    .sideNavOption{
-        width: 25%;
-        float: left;
-        min-height: 45px;
-    }
-    .secondaryNavMobliePosition{
-    position:fixed;
-          
-}
-}
-
-
-/*end of Global styles///////////*/
 
 
 
@@ -231,10 +319,17 @@ h3{
 
 
 /*Index Styles////////////////////*/
+.specialsSection{
+    margin-top:60px;
+    margin-bottom:40px;
+}
+.topthreeCTAs{
+    margin-top:50px;
+}
 .drinksCTA{
     font-size: 3em;
     color: #fff;
-    line-height: 165px;
+    line-height:220px;
 }
 .drinksCTAImgBG{
        background: url(../img/beertaps.jpg) no-repeat center top fixed; 
@@ -244,17 +339,14 @@ h3{
   background-size: cover;
  }
 .quotesImgBG{
-       background: url(../img/sportsBarPeople.jpg) no-repeat center top fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+background-image:url(../img/dark_wood.png);
+    background-repeat:repeat;
  height: 300px;
     overflow: hidden;
-}
+  }
 
 .quotes{  margin:0 auto;
-  padding:0;
+  padding:25px;
   text-align: center;
   list-style-type: none;
   width: 100%;
@@ -265,14 +357,19 @@ background-color: rgba(1,1,1,.5);}
     height: 100%;
     width: 100%;
     color:white;
-    font-size:2em;
+    /*font-size:2em;*/
     text-align: center;
     
 }
 .personQuote{
     padding-top: 75px;
-    font-size: 28px;
+    font-size:35px;
     font-style: italic;
+    line-height: 40px;
+}
+.nameForQuote{
+    font-size: 34px;
+    line-height: 44px;
 }
 .glyphicon-cutlery, .glyphicon-glass, .glyphicon-education, .glyphicon-cd,.glyphicon-calendar,.glyphicon-search,.glyphicon-book{
     font-size:100px;
@@ -349,8 +446,9 @@ background-color: rgba(1,1,1,.5);}
     margin-bottom: 15px;
  }
 .foodName, .foodPrice{
+    font-family: 'Ubuntu', sans-serif;
     height: 22px;
-     font-size:20px;
+    font-size:20px;
 }
 .foodName{
     float:left;
@@ -363,6 +461,17 @@ background-color: rgba(1,1,1,.5);}
     clear: both;
     font-size: 14px;
     height: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+.whiskeyDrink{
+    clear: both;
+    font-size:18px;
+    line-height: 22px;
+    height: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+#ctail .foodPrice{
+    font-size:18px;
 }
 /*end menu Styles////////////////////*/
 
@@ -413,8 +522,9 @@ background-color: rgba(1,1,1,.5);}
 #footer{
     min-height: 200px;
     padding: 50px 0;
-    background-color: #333;
+    background-color:#414242;
     color:white;
         position: relative;
     z-index: 9;
+    border-top: 5px #F9E79F solid;
 }
