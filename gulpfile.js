@@ -4,7 +4,7 @@ var gulp = require('gulp');
 
 
 //var cleanCSS = require('gulp-clean-css');
- 
+
 //gulp.task('mincss', function() {
 //  return gulp.src('working/css/*.css')
 //    .pipe(cleanCSS({compatibility: 'ie8'}))
@@ -13,7 +13,7 @@ var gulp = require('gulp');
 
 
 var cleanCSS = require('gulp-clean-css');
- var concatCss = require('gulp-concat-css');
+var concatCss = require('gulp-concat-css');
 gulp.task('mincss', function() {
   return gulp.src(['working/css/reset.css',
                   'working/css/mainstyle.css'])
@@ -25,9 +25,8 @@ gulp.task('mincss', function() {
 
 
 
-
 var imagemin = require('gulp-imagemin');
- 
+
 gulp.task('minimg', () =>
     gulp.src('working/img/*')
         .pipe(imagemin())
@@ -39,16 +38,18 @@ gulp.task('minimg', () =>
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
-gulp.task('catjs', function () {    
-  gulp.src(['working/js/script.js',
-            'working/js/menuscript.js'])  
+gulp.task('catjs', function () {
+  gulp.src(['working/js/contactForm.js',
+  'working/js/script.js',
+            'working/js/jquery-ui.min.js',
+            'working/js/menuscript.js'])
     .pipe(concat("allscript.js"))
     .pipe(uglify())
     .pipe(gulp.dest('js/'));
 });
 
-gulp.task('catFoodjs', function () {    
-  gulp.src('working/json/*.js')  
+gulp.task('catFoodjs', function () {
+  gulp.src('working/json/*.js')
     .pipe(concat("allfood.js"))
     .pipe(uglify())
     .pipe(gulp.dest('js/'));
@@ -56,7 +57,7 @@ gulp.task('catFoodjs', function () {
 
 
 
-        
+
 
 
 
@@ -66,7 +67,7 @@ gulp.task('watch', function(){
     gulp.watch('working/img/*', ['minimg']);
      gulp.watch('working/js/*.js', ['catjs']);
      gulp.watch('working/json/*.js', ['catFoodjs']);
-    
+
 });
 
 gulp.task('default', ['mincss','catjs','catFoodjs','minimg', 'watch'])
