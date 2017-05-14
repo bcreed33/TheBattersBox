@@ -1,710 +1,845 @@
-/*
-fonts
-headings - 'Bitter', serif;
-other - 'Ubuntu', sans-serif;
+    /*
+    fonts
+    headings - 'Bitter', serif;
+    other - 'Ubuntu', sans-serif;
 
-Colors
-dark blue - #78909c
-dark grey - #414242
-soft gold - #F9E79F
-
-
-
-@media screen and screen and(max-width: 900px)
-@media screen and screen and(max-width:768 px)
-
-*/
-
-
-/*google font import///////////////////////*/
-@import url('https://fonts.googleapis.com/css?family=Bitter|Ubuntu');
+    Colors
+    dark blue - #78909c
+    dark grey - #414242
+    soft gold - #F9E79F
 
 
 
-/*Css variables///////////////////////////*/
-:root{
-/*Colors*/
---darkBlue:#78909c;
---darkGrey:#414242;
---softGold:#F9E79F;
-/*Fonts*/
---headingFont:'Bitter', serif;
---paraFont: 'Ubuntu', sans-serif;
-}
+    @media(max-width:900px)
+    @media(max-width:768px)
+    @media(max-width:450px)
+    @media(max-width:325px)
+    */
 
 
-/*different sections////////////////////*/
-.section1{
-background-color:#fff;
-height:auto;
-min-height: 400px;
-padding:75px 0;
-}
-.section2{
-background-color:var(--darkBlue);
-height:auto;
-min-height: 400px;
-padding:75px 0;
-color:#fff;
-}
-@media screen and (max-width:768px){
-.section1, .section2{
-padding: 75px 0;
-}
-}
-.midPageImgSection{
-width: 100%;
-height:250px;
-background-color: green;
-}
-
-
-/*Global styles///////////*/
-h1{
-font-size:4em;
-text-decoration: underline;
-font-family: var(--headingFont);
-}
-h2{
-font-size: 2.5em;
-font-family: var(--headingFont);
-}
-h3{
-font-size: 1.5em;
-font-family: var(--headingFont);
-margin: 0 15px;
-}
-p{
-font-family: var(--paraFont);
-font-size: 16px;
-line-height: 18px;
-}
-a{
-font-family: var(--paraFont) !important;
-}
-.hrcolor{
-height: 2px;
-background-color:var(--darkBlue);
-}
-.navbar{
-margin-bottom: 0px;
-background-color:#fff;
-color:#fff;
-border:none;
-height: 75px;
-border-bottom: 7px solid var(--darkBlue);
-}
-.nav .active a{
-background-color:#fff !important;
-border-bottom:#000 solid 7px;
-color:var(--darkBlue) !important;
-}
-.nav a{
-color:#000 !important;
-height: 75px;
-min-width:100px !important;
-line-height:45px !important;
-text-align: center;
-font-size: 18px;
-letter-spacing:1px;
-transition: all .1s ease-in-out;
-}
-.nav a:hover{
-
-border-bottom:var(--softGold) solid 7px;
-}
-.page-header{
-display: block;
-width: 100%;
-height: 350px;
-margin: 0;
-padding: 0;
-}
-.button1{
-background-color:var(--darkGrey);
-color:white;
-width: auto;
-min-width: 125px;
-min-height: 45px;
-font-size: 20px;
-margin: 10px;
-border: 1px #fff solid;
-transition: all .2s ease-in-out;
-}
-.button1:hover{
-
-background-color:lightblue;
-color:black;
-
-}
-.topBar{
-background-color:var(--darkGrey);
-min-height:50px;
-height: auto;
-}
-.topBar p{
-color:#fff;
-padding: 15px 0;
-font-size: 14px;
-}
-.blackOpcity{
-display: block;
-width: 100%;
-height: 100%;
-background: rgba(1,1,1,.5);
-}
-
-.secondaryNav{
-width:10%;
-max-width:200px;
-height:300px;
-position:fixed;
-top:175;
-left:-175;
-display: block;
-
-font-size: 20px;
-}
-.secondaryNavPosition{
-left:0 !important;
-transition: all 1s ease-in;
-}
-.sideNavOption{
-width:100%;
-width: 175px;
-height: 50px;
-font: 20px;
-display: block;
-text-align: center;
-background-image: -webkit-linear-gradient(90deg,#000 0,transparent);
-background-image: linear-gradient(90deg,var(--darkGrey) 0,transparent);
-margin: 5px 0;
-line-height: 50px;
-color: #fff;
-transition: all .1s ease-in-out;
-}
-.sideNavOption:hover{
-width: 200px!important;
-font-size: 24px;
-color:#fff;
-background-image: linear-gradient(90deg,var(--darkBlue) 80px,transparent);
-}
-
-@media screen and (max-width: 900px) {
-
-.secondaryNav{
-width: 100%;
-max-width: 100%;
-height: 45px;
-top:0;
-left: 0;
-position: inherit;
-
-}
-.sideNavOption{
-width: 25%;
-float: left;
-min-height: 45px;
-}
-.secondaryNavMobliePosition{
-position:fixed;
-
-}
-}
-
-
-/*end of Global styles///////////*/
+    /*google font import//////////////////////////////////////////////////////////*/
+    @import url('https://fonts.googleapis.com/css?family=Bitter|Ubuntu');
 
 
 
-/*hero section////////////////////*/
-.navbarlogo{
-
-}
-.navbar-brand{
-padding: 10px 15px !important;
-}
-#heroBackgroundImage1{
-background-color: blue;
-background: url(../img/hero1.image.jpg) no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-height: 750px;
-}
-#heroContent1{
-display: block;
-width: 50%;
-margin: 0 auto;
-}
-#heroContent1 h3{
-text-align: center;
-color:white;
-}
-.mainHeroLogo1{
-display: block;
-width: 80%;
-max-width:250px;
-height: auto;
-margin: 0 auto;
-padding-top: 75px;
-}
-
-#heroBackgroundImage{
-overflow: hidden;
-height:600px;
-background:url(../img/barbackground.jpg)no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-}
-.heroBox{
-display: block;
-width: 100%;
-max-width:1000px;
-height: auto;
-min-height:600px;
-margin: 0 auto;
-position: relative;
-overflow: hidden;
-}
-.logo{
-height:285px;
-width:100%;
-background-image: url(../img/theBattersBoxLogo.png);
-background-position:center;
-background-repeat: no-repeat;
-position: absolute;
-top:27%;
-margin-top: -100px;
-z-index: 9999;
-}
-
-.beer{
-width:100%;
-max-width:500px;
-height:400px;
-background-image: url(../img/herobeer.png);
-background-repeat: no-repeat;
-background-position: center;
-background-size: contain;
-position: absolute;
-bottom:35px;
-left:7%;
+    /*Css variables///////////////////////////////////////////////////////////////*/
+    :root{
+    /*Colors*/
+    --darkBlue:#78909c;
+    --darkGrey:#414242;
+    --softGold:#F9E79F;
+    /*Fonts*/
+    --headingFont:'Bitter', serif;
+    --paraFont: 'Ubuntu', sans-serif;
+    }
 
 
-}
-
-.burger{
-width:600px;
-height:300px;
-background-image:url(../img/heroBurger.png);
-background-repeat: no-repeat;
-background-position: center;
-background-size: contain;
-position: absolute;
-bottom:0;
-left:28%;
-z-index: 10000;
-
-
-}
-@media screen and (max-width: 900px) {
-.beer, .burger{
-left:0;
-right:0;
-
-}
-
-}
-@media screen and (max-width: 550px) {
-#heroBackgroundImage{
-height: 500px;
-}
-.beer{
-background-position: right center;
-left:0
-}
-.burger{
-/*width:400px;
-left:1px;*/
-display: none;
-}
-}
-
-/*end hero section////////////////////*/
+    /*different sections//////////////////////////////////////////////////////////*/
+    .section1{
+    background-color:#fff;
+    height:auto;
+    min-height: 400px;
+    padding:75px 0;
+    }
+    .section2{
+    background-color:var(--darkBlue);
+    height:auto;
+    min-height: 400px;
+    padding:75px 0;
+    color:#fff;
+    }
+    @media (max-width:768px){
+    .section1, .section2{
+    padding: 75px 0;
+    }
+    }
+    .midPageImgSection{
+    width: 100%;
+    height:250px;
+    background-color: green;
+    }
 
 
+    /*Global styles//////////////////////////////////////////////////////////////*/
+    h1{
+    font-size:4em;
+    text-decoration: underline;
+    font-family: var(--headingFont);
+    }
+    h2{
+    font-size: 2.5em;
+    font-family: var(--headingFont);
+    }
+    h3{
+    font-size: 1.5em;
+    font-family: var(--headingFont);
+    margin: 0 15px;
+    }
+    h4{
+    font-size: 1em;
+    font-family: var(--headingFont);
+    letter-spacing: .5px;
+
+    }
+    p{
+    font-family: var(--paraFont);
+    font-size: 16px;
+    line-height: 18px;
+    }
+    a{
+    font-family: var(--paraFont) !important;
+    }
+    li{
+    font-family: var(--paraFont) !important;
+    }
+    .hrcolor{
+    height: 2px;
+    background-color:var(--darkBlue);
+    }
+    .navbar{
+    margin-bottom: 0px;
+    background-color:#fff;
+    color:#fff;
+    border:none;
+    height: 75px;
+    border-bottom: 7px solid var(--darkBlue);
+    }
+    .nav .active a{
+    background-color:#fff !important;
+    border-bottom:#000 solid 7px;
+    color:var(--darkBlue) !important;
+    }
+    .nav a{
+    color:#000 !important;
+    height: 75px;
+    min-width:100px !important;
+    line-height:45px !important;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing:1px;
+    transition: all .1s ease-in-out;
+    }
+    .nav a:hover{
+
+    border-bottom:var(--softGold) solid 7px;
+    }
+    .page-header{
+    display: block;
+    width: 100%;
+    height: 350px;
+    margin: 0;
+    padding: 0;
+    }
+    .button1{
+    background-color:var(--darkGrey);
+    color:white;
+    width: auto;
+    min-width: 125px;
+    min-height: 45px;
+    font-size: 20px;
+    margin: 10px;
+    border: 1px #fff solid;
+    transition: all .2s ease-in-out;
+    }
+    .button1:hover{
+
+    background-color:lightblue;
+    color:black;
+
+    }
+    .topBar{
+    background-color:var(--darkGrey);
+    min-height:50px;
+    height: auto;
+    }
+    .topBar p{
+    color:#fff;
+    padding: 10px 0;
+    font-size: 14px;
+    min-height: 44px;
+    }
+    .blackOpcity{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(1,1,1,.5);
+    }
+
+    .secondaryNav{
+    width:10%;
+    max-width:200px;
+    height:300px;
+    position:fixed;
+    top:175;
+    left:-175;
+    display: block;
+
+    font-size: 20px;
+    }
+    .secondaryNavPosition{
+    left:0 !important;
+    transition: all 1s ease-in;
+    }
+    .sideNavOption{
+    width:100%;
+    width: 175px;
+    height: 50px;
+    font: 20px;
+    display: block;
+    text-align: center;
+    background: -webkit-linear-gradient(90deg,#000 0,transparent);
+    background: linear-gradient(90deg,var(--darkGrey) 0,transparent);
+    margin: 5px 0;
+    line-height: 50px;
+    color: #fff;
+    transition: all .1s ease-in-out;
+    }
+    .sideNavOption:hover{
+    width: 200px;
+    font-size: 24px;
+    color:#fff;
+    background: linear-gradient(90deg,var(--darkBlue) 80px,transparent);
+    }
+
+    @media (max-width: 900px) {
+
+    .secondaryNav{
+    width: 100%;
+    max-width: 100%;
+    height: 45px;
+    top: 375px;
+    left: 0;
+    position:fixed;
 
 
+    }
+    .sideNavOption{
+    width: 25%;
+    float: left;
+    min-height: 45px;
+    background: #000;
 
 
+    }
+    .sideNavOption:hover{
+    width:25%;
+    font-size: 24px;
+    color:#fff;
+    background:#000;
+    }
+    .secondaryNavMobliePosition{
+    position:fixed;
 
-/*Index Styles////////////////////*/
-.section1 h1{
+    }
+    }
+
+
+    /*end of Global styles////////////////////////////////////////////////////////*/
+
+    /*hero section////////////////////////////////////////////////////////////////*/
+    .navbarlogo{
+
+    }
+    .navbar-brand{
+    padding: 10px 15px !important;
+    }
+    #heroBackgroundImage1{
+    background-color: blue;
+    background: url(../img/hero1.image.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 750px;
+    }
+    #heroContent1{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    }
+    #heroContent1 h3{
+    text-align: center;
+    color:white;
+    }
+    .mainHeroLogo1{
+    display: block;
+    width: 80%;
+    max-width:250px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 75px;
+    }
+
+    #heroBackgroundImage{
+    overflow: hidden;
+    height:600px;
+    background:url(../img/barbackground.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    .heroBox{
+    display: block;
+    width: 100%;
+    max-width:1000px;
+    height: auto;
+    min-height:600px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    }
+    .logo{
+    height:285px;
+    width:100%;
+    background-image: url(../img/theBattersBoxLogo.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:27%;
+    margin-top: -100px;
+    z-index: 9999;
+    }
+
+    .beer{
+    width:100%;
+    max-width:500px;
+    height:400px;
+    background-image: url(../img/herobeer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    bottom:35px;
+    left:7%;
+
+
+    }
+
+    .burger{
+    width:600px;
+    height:300px;
+    background-image:url(../img/heroBurger.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    bottom:0;
+    left:28%;
+    z-index: 10000;
+
+
+    }
+    @media (max-width: 900px) {
+    .beer, .burger{
+    left:0;
+    right:0;
+
+    }
+
+    }
+    @media (max-width: 550px) {
+    #heroBackgroundImage{
+    height: 500px;
+    }
+    .beer{
+    background-position: right center;
+    left:0
+    }
+    .burger{
+    /*width:400px;
+    left:1px;*/
+    display: none;
+    }
+    }
+
+    /*end hero section////////////////////////////////////////////////////////////*/
+
+
+    /*Index Styles////////////////////////////////////////////////////////////////*/
+    .section1 h1{
     margin-bottom: 15px;
 
+    }
+    .specialsSection{
+    margin-top:60px;
+    margin-bottom:40px;
+    }
+    .topthreeCTAs{
+    margin-top:50px;
+    }
+    .drinksCTA{
+    font-size: 3em;
+    color: #fff;
+    line-height:220px;
+    }
+
+    .drinksCTAImgBG{
+    background: url(../img/beertaps.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+.theDaySpecial{
+     margin: 15px 0;
 }
-.specialsSection{
-margin-top:60px;
-margin-bottom:40px;
-}
-.topthreeCTAs{
-margin-top:50px;
-}
-.drinksCTA{
-font-size: 3em;
-color: #fff;
-line-height:220px;
+.theDaySpecial h3{
+    margin:15px 0;
 }
 
-.drinksCTAImgBG{
-background: url(../img/beertaps.jpg) no-repeat center top fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-}
-.quotesImgBG{
-background-image:url(../img/dark_wood.png);
-background-repeat:repeat;
-height: 300px;
-overflow: hidden;
-}
+    .quotesImgBG{
+    background-image:url(../img/dark_wood.png);
+    background-repeat:repeat;
+    height: 300px;
+    overflow: hidden;
+    }
 
-.quotes{
-margin:0 auto;
-padding:25px;
-text-align: center;
-list-style-type: none;
-width: 100%;
-position:relative;
-background-color: rgba(1,1,1,.5);}
+    .quotes{
+    margin:0 auto;
+    padding:25px;
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
+    position:relative;
+    background-color: rgba(1,1,1,.5);}
 
-.blockquote{
-height: 100%;
-width: 100%;
-color:white;
-/*font-size:2em;*/
-text-align: center;
+    .blockquote{
+    height: 100%;
+    width: 100%;
+    color:white;
+    /*font-size:2em;*/
+    text-align: center;
 
-}
-.personQuote{
-padding-top: 75px;
-font-size:35px;
-font-style: italic;
-line-height: 40px;
-}
-.nameForQuote{
-font-size: 34px;
-line-height: 44px;
-}
-.glyphicon-cutlery, .glyphicon-glass, .glyphicon-education, .glyphicon-cd,.glyphicon-calendar,.glyphicon-search,.glyphicon-book{
-font-size:100px;
-clear: both;
-text-align: center;
-width: 100%;
-}
+    }
+    .personQuote{
+    padding-top: 75px;
+    font-size:35px;
+    font-style: italic;
+    line-height: 40px;
+    }
+    .nameForQuote{
+    font-size: 34px;
+    line-height: 44px;
+    }
+    .glyphicon-cutlery, .glyphicon-glass, .glyphicon-education, .glyphicon-cd,.glyphicon-calendar,.glyphicon-search,.glyphicon-book{
+    font-size:100px;
+    clear: both;
+    text-align: center;
+    width: 100%;
+    }
 
-@media screen and (max-width:768px){
+    @media (max-width:768px){
     .drinksCTA{
     font-size:2em;
     line-height:35px;
     padding: 80px 0;
     }
-}
-    @media screen and (max-width:475px){
-        .section1, .section2{
-            padding: 25xp 0;
-        }
+    }
+    @media (max-width:450px){
+    .section1, .section2{
+    padding: 25xp 0;
+    }
     .section1 h1{
-        font-size: 2.5em;
-        line-height: 50px;
+    font-size: 2.5em;
+    line-height: 50px;
     }
     .personQuote{
-        padding-top:25px;
-        font-size: 24px;
+    padding-top:25px;
+    font-size: 24px;
     }
-}
+    }
 
 
 
 
 
-/*end Index Styles////////////////////*/
+    /*end Index Styles////////////////////////////////////////////////////////////*/
 
 
-/*Menu page Styles////////////////////*/
-#saladlink{
-background: url(../img/saladBowl.jpg) no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;}
-#tacolink{
-background: url(../img/spicyTaco.jpg) no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-}
-#burgerlink{
-background: url(../img/burgerPlate.jpg) no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-}
-#applink{
-background: url(../img/pizzaApp.jpg) no-repeat center top fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-}
+    /*Menu page Styles///////////////////////////////////////////////////////////*/
+    #saladlink{
+    background: url(../img/saladBowl.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;}
+    #tacolink{
+    background: url(../img/spicyTaco.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    #burgerlink{
+    background: url(../img/burgerPlate.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    #applink{
+    background: url(../img/pizzaApp.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
 
-.menu-page-header{
-background: url(../img/burger1.jpg) no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-height:300px;
+    .menu-page-header{
+    background: url(../img/burger1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:300px;
 
-}.menu-page-header h1{
-color:#fff;
-font-weight: bold;
-line-height: 125px;
-}
-.foodlist li{
-max-width: 300px;
+    }.menu-page-header h1{
+    color:#fff;
+    font-weight: bold;
+    line-height: 125px;
+    }
+    .foodlist li{
+    max-width: 300px;
+    width:100%;
+    height: 20px;
+    border-bottom: 1px dotted black;
+    background-color: white;
+
+    }
+    .menuItemSection{
+    width: 100%;
+    height: 300px;
+    display: block;
+    padding: 15px 0;
+
+    clear: both;
+    max-width: 950px;
+    margin: 0 auto;
+    }
+    .drinkChoice{
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    display: block;
+    clear: both;
+    margin-bottom:15px;
+    }
+    .menuChoice{
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    display: block;
+    clear: both;
+    margin-bottom:25px;
+    }
+    .foodName, .foodPrice{
+    font-family: var(--paraFont);
+    height:30px;
+    font-size:20px;
+    }
+    .foodName{
+    float:left;
+    font-weight: bold;
+    }
+    .foodPrice{
+    float: right;
+    }
+    .foodNote{
+    clear: both;
+    font-size: 14px;
+    height: auto;
+    font-family: var(--paraFont);
+    line-height: 20px;
+    width:90%;
+    }
+
+    .drinknote{
+    width:80%;
+    display: block;
+    float: left;
+    min-height: 30px;
+    font-size: 14px;
+    font-size: 14px;
+    height: auto;
+    font-family: var(--paraFont);
+    line-height: 20px;
+    margin-left:100px;
+    }
+    .whiskeyDrink{
+    clear: both;
+    font-size:18px;
+    line-height: 22px;
+    height: auto;
+    font-family: var(--paraFont);
+    }
+
+    #redWine h2, #whiteWine h2, #americanWhiskey h2, #importedWhiskey h2{
+    height: auto;
+    min-height:50px;
+    }
+
+    #redWine, #whiteWine, #americanWhiskey, #importedWhiskey, #onTap{
+    width: 100%;
+    max-width:300px;
+    margin: 0 auto;
+    padding:25px 0;
+    }
+
+    @media(max-width:450px){
+    .menuItemSection{
+    padding: 15px 0;
+    margin: 0px;
+    }
+    .foodName, .foodPrice {
+    float: left;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    }
+    .foodNote{
+    width: 100%;
+    }
+    .drinknote{
 width:100%;
-height: 20px;
-border-bottom: 1px dotted black;
-background-color: white;
-
+    margin-left:0px;
 }
-.menuItemSection{
-width: 100%;
-height:300px;
-display: block;
-padding: 15px;
-margin: 10px;
-clear: both;
-}
-.menuChoice{
-width: 100%;
-height: 45px;
-display: block;
-clear: both;
-margin-bottom: 15px;
-}
-.foodName, .foodPrice{
-font-family: var(--paraFont);
-height: 22px;
-font-size:20px;
-}
-.foodName{
-float:left;
-font-weight: bold;
-}
-.foodPrice{
-float: right;
-}
-.foodNote{
-clear: both;
-font-size: 14px;
-height: auto;
-font-family: var(--paraFont);
-}
-.whiskeyDrink{
-clear: both;
-font-size:18px;
-line-height: 22px;
-height: auto;
-font-family: var(--paraFont);
-}
-#ctail .foodPrice{
-font-size:18px;
-}
-/*end menu Styles///////////////////////////////////////////////////////*/
-
-/*drink Styles/////////////////////////////////////////////////////////*/
-#beer{
-background: url(../img/beerTap.jpg) no-repeat center bottom fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;}
-#cocktail{
-background: url(../img/cocktail.jpg) no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-}
-#whiskey{
-background: url(../img/whiskeyBarrels.jpg) no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-}
-#wine{
-background: url(../img/wineGlass.jpg) no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-}
-/*end drink Styles////////////////////*/
-
-
-/*event page Styles////////////////////*/
-.caterList h3{
-margin-top: 15px;
-margin-bottom: 10px;
-
-
-}
-.caterList ul li{
-font-family: var(--paraFont);
-font-size: 16px;
-line-height: 19px;
-letter-spacing: .5px;
-text-indent: 25px;
-}
-
-.eventbtn{
-display: block;
-
-margin-top:25px;
-margin-bottom: 0;
-margin-right: auto;
-margin-left: auto;
-}
-
-
-
-/*end event Styles////////////////////*/
-
-
-/*Contact page Styles////////////////////*/
-
-form {
-font-family: var(--paraFont);
-max-width: 450px;
-margin: 0 auto;
-padding: 25px 0;
-}
-label {
-font-size: 25px;
-padding: 10px;
-text-decoration: underline;}
-
-input, textarea{
-width:100%;
-max-width: 450px;
-margin-bottom:25px;
-height: 45px;
-padding: 10px;
-
-}
-
-#subbtn{
-max-width: 250px;
-margin: 0 auto;
-background-color: var(--darkBlue);
-transition: all .2s ease-in-out;
-color:#fff;
-}
-#subbtn:hover{
-background-color: var(--softGold);
-color:#000;
-}
-
-
-.checkBoxSec{
-display: block;
-width:100%;
-border:4px solid var(--darkBlue);
-height: auto;
-min-height:100px;
-padding: 20px;
-
-}
-.checkBoxSec p{
-line-height: 50px;
+    #redWine h2, #whiteWine h2, #americanWhiskey h2, #importedWhiskey h2{
 text-align: center;
-}
-input[type='checkbox']{
-display: block;
-float: left;
-width: 50px;
-background-color: gold;
-}
+    }
 
-.DatePickerSection{
-display: block;
-width:90%;
-height: 0;
-margin: 0 auto;
-text-align: center;
-transition: all .2s ease-in-out;
-overflow: hidden;
-background-color:var(--softGold);
-padding:0px 35px 0 35px;
+    #onTap .foodName{
+        height: auto;
+        min-height: 50px;
+        line-height:25px;
+    }
+    #onTap .drinknote{
+        text-align: center;
+    }
 
+    }
+    /*end menu Styles/////////////////////////////////////////////////////////////*/
 
-
-}
-#datepicker{
-text-align: center;
-margin-top:5px;
-}
-.DatePickerSectionNoShow{
-height:100px;
-margin-bottom: 15px;
-padding-top: 5px;
-}
-.optional{
-font-size: 11px;
-margin: 0;
-position: relative;
-top: -22px;
-}
-input#email:valid{
-border:2px green solid;
-background-color:rgba(0,204,102,.2) !important;
-}
-input[type='email']:invalid:not(:focus):not(:placeholder-shown) {
-background: pink;
-border: 2px red solid;
-}
-input:focus, textarea:focus{
-border:2px var(--darkBlue) solid;
-font-size-adjust: 2px;
-font-weight: bold;
-letter-spacing: .5px;
-
-}
-
-/* END Contact Styles//////////////////// */
+    /*drink Styles////////////////////////////////////////////////////////////////*/
+    #beer{
+    background: url(../img/beerTap.jpg) no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;}
+    #cocktail{
+    background: url(../img/cocktail.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    #whiskey{
+    background: url(../img/whiskeyBarrels.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    #wine{
+    background: url(../img/wineGlass.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    /*end drink Styles////////////////////////////////////////////////////////////*/
 
 
+    /*event page Styles///////////////////////////////////////////////////////////*/
+    .caterList h3{
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+
+    }
+    .cateringPara{
+    display: block;
+    margin-bottom:25px ;
+    }
+    .caterList{
+    margin-top: 20px;
+    }
+    .caterList ul li{
+    font-family: var(--paraFont);
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: .5px;
+    text-indent: 25px;
+    }
+
+    .eventbtn{
+    display: block;
+
+    margin-top:25px;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+
+
+    /*end event Styles////////////////////////////////////////////////////////////*/
+
+
+    /*Contact page Styles/////////////////////////////////////////////////////////*/
+
+    form {
+    font-family: var(--paraFont);
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 25px 0;
+    min-height: 350px;
+    }
+    label {
+    font-size: 25px;
+    padding: 10px;
+    text-decoration: underline;}
+
+    input, textarea{
+    width:100%;
+    max-width: 450px;
+    margin-bottom:25px;
+    height: 45px;
+    padding: 10px;
+
+    }
+
+    #subbtn{
+    max-width: 250px;
+    margin: 0 auto;
+    background-color: var(--darkBlue);
+    transition: all .2s ease-in-out;
+    color:#fff;
+    }
+    #subbtn:hover{
+    background-color: var(--softGold);
+    color:#000;
+    }
+
+
+    .checkBoxSec{
+    display: block;
+    width:100%;
+    border:4px solid var(--darkBlue);
+    height: auto;
+    min-height:100px;
+    padding: 20px;
+
+    }
+    .checkBoxSec p{
+    margin-top: 12px;
+    text-align: center;
+    }
+    input[type='checkbox']{
+    display: block;
+    float: left;
+    width: 50px;
+    background-color: gold;
+    }
+
+    .DatePickerSection{
+    display: block;
+    width:90%;
+    height: 0;
+    margin: 0 auto;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+    background-color:#fff;
+    padding:0px 35px 0 35px;
+
+
+
+    }
+    #datepicker{
+    text-align: center;
+    margin-top:5px;
+    }
+    .DatePickerSectionNoShow{
+    height:100px;
+    margin-bottom: 15px;
+    padding-top: 5px;
+    background-color:var(--softGold);
+    }
+    .optional{
+    font-size: 11px;
+    margin: 0;
+    position: relative;
+    top: -22px;
+    }
+    input#email:valid{
+    border:2px green solid;
+    background-color:rgba(0,204,102,.2) !important;
+    }
+    input[type='email']:invalid:not(:focus):not(:placeholder-shown) {
+    background: pink;
+    border: 2px red solid;
+    }
+    input:focus, textarea:focus{
+    border:2px var(--darkBlue) solid;
+    font-size-adjust: 2px;
+    font-weight: bold;
+    letter-spacing: .5px;
+
+    }
+    .hoursInfoSection{
+    margin: 20px 0;
+    }
+    .hoursInfoSection ul{
+    margin-top: 5px;
+    /*text-indent: 15px;*/
+    }
+    .hoursInfoSection ul li{
+    line-height:24px;
+    }
 
 
 
 
-/*Footer////////////////////*/
-#footer{
-min-height: 200px;
-padding: 50px 0;
-background-color:var(--darkGrey);
-color:white;
-position: relative;
-z-index: 9;
-border-top: 5px var(--softGold) solid;
-}
+    @media(max-width:768px){
+    .hoursInfoSection ul li{
+    text-align:center;
+    }
+    }
+    @media(max-width:450px){
+    .checkBoxSec p {
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 0px;
+    }
+    .DatePickerSection{
+    width:100%;
+    padding:2.5px;
+    }
+    .DatePickerSectionNoShow{
+    height: 115px;
+    }
+    }
+    @media(max-width:325px){
+    input[type=checkbox]{
+    margin:0 auto;
+    }
+    .checkBoxSec p {
+    clear: both;
+    }
+
+    }
+    /* END Contact Styles//////////////////////////////////////////////////////// */
+
+
+    /*Footer//////////////////////////////////////////////////////////////////////*/
+    #footer{
+    min-height: 200px;
+    padding: 50px 0;
+    background-color:var(--darkGrey);
+    color:white;
+    position: relative;
+    z-index: 9;
+    border-top: 5px var(--softGold) solid;
+    }
