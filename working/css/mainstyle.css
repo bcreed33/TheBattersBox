@@ -7,7 +7,15 @@
     dark blue - #78909c
     dark grey - #414242
     soft gold - #F9E79F
+    -1-darkBlue:#78909c;
+    -1-darkGrey:#414242;
+    -1-softGold:#F9E79F;
 
+
+NEW COLORS
+    light blue #93ACB1
+    daark blue #2C4251
+    light warm red #D16656
 
 
     @media(max-width:900px)
@@ -25,9 +33,10 @@
     /*Css variables///////////////////////////////////////////////////////////////*/
     :root{
     /*Colors*/
-    --darkBlue:#78909c;
-    --darkGrey:#414242;
-    --softGold:#F9E79F;
+    --lightBlue:#2C5C67;
+    --darkBlue:#2C4251;
+    --warmRed:#D16656;
+    --darkGrey:#2e2e2e;
     /*Fonts*/
     --headingFont:'Bitter', serif;
     --paraFont: 'Ubuntu', sans-serif;
@@ -48,6 +57,7 @@
     padding:75px 0;
     color:#fff;
     }
+
     @media (max-width:768px){
     .section1, .section2{
     padding: 75px 0;
@@ -94,7 +104,7 @@
     }
     .hrcolor{
     height: 2px;
-    background-color:var(--darkBlue);
+    background-color:var(--warmRed);
     }
     .navbar{
     margin-bottom: 0px;
@@ -121,7 +131,7 @@
     }
     .nav a:hover{
 
-    border-bottom:var(--softGold) solid 7px;
+    border-bottom:var(--warmRed) solid 7px;
     }
     .page-header{
     display: block;
@@ -131,7 +141,7 @@
     padding: 0;
     }
     .button1{
-    background-color:var(--darkGrey);
+    background-color:var(--darkBlue);
     color:white;
     width: auto;
     min-width: 125px;
@@ -140,11 +150,15 @@
     margin: 10px;
     border: 1px #fff solid;
     transition: all .2s ease-in-out;
+    text-decoration: none;
+    }
+    .button a{
+        text-decoration: none;
     }
     .button1:hover{
 
-    background-color:lightblue;
-    color:black;
+    background-color:var(--warmRed);
+    color:#fff;
 
     }
     .topBar{
@@ -154,9 +168,9 @@
     }
     .topBar p{
     color:#fff;
-    padding: 10px 0;
+    padding: 15px 0;
     font-size: 14px;
-    min-height: 44px;
+    min-height: 44px
     }
     .blackOpcity{
     display: block;
@@ -188,7 +202,7 @@
     display: block;
     text-align: center;
     background: -webkit-linear-gradient(90deg,#000 0,transparent);
-    background: linear-gradient(90deg,var(--darkGrey) 0,transparent);
+    background: linear-gradient(90deg,var(--lightBlue) 0,transparent);
     margin: 5px 0;
     line-height: 50px;
     color: #fff;
@@ -198,8 +212,7 @@
     width: 200px;
     font-size: 24px;
     color:#fff;
-    background: linear-gradient(90deg,var(--darkBlue) 80px,transparent);
-    }
+     }
 
     @media (max-width: 900px) {
 
@@ -233,7 +246,19 @@
     }
     }
 
+    @media(max-width:768px){}
+    @media(max-width:450px){
+        .sideNavOption{
+        width:50%;
+        margin: 0px;
+    }
+    .sideNavOption:hover{
+    width:50%;
+ 
+    }
 
+    }
+    @media(max-width:325px){}
     /*end of Global styles////////////////////////////////////////////////////////*/
 
     /*hero section////////////////////////////////////////////////////////////////*/
@@ -387,7 +412,11 @@
 .theDaySpecial h3{
     margin:15px 0;
 }
-
+.homePageIcon{
+    display: block;
+        width: 175px;
+        margin: 0 auto;
+}
     .quotesImgBG{
     background-image:url(../img/dark_wood.png);
     background-repeat:repeat;
@@ -487,7 +516,7 @@
     }
 
     .menu-page-header{
-    background: url(../img/burger1.jpg) no-repeat center center fixed;
+    background: url(../img/sportsBarPeople.jpg) no-repeat center bottom fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -688,7 +717,12 @@ text-align: center;
 
 
     /*Contact page Styles/////////////////////////////////////////////////////////*/
-
+    .eventSMicon{
+        display: block;
+        float: left;
+        width:150px;
+        padding: 15px;
+    }
     form {
     font-family: var(--paraFont);
     max-width: 450px;
@@ -710,7 +744,7 @@ text-align: center;
 
     }
 
-    #subbtn{
+    /*#subbtn{
     max-width: 250px;
     margin: 0 auto;
     background-color: var(--darkBlue);
@@ -720,16 +754,16 @@ text-align: center;
     #subbtn:hover{
     background-color: var(--softGold);
     color:#000;
-    }
+    }*/
 
 
     .checkBoxSec{
     display: block;
     width:100%;
-    border:4px solid var(--darkBlue);
+    border:4px solid var(--warmRed);
     height: auto;
-    min-height:100px;
-    padding: 20px;
+    min-height:80px;
+    padding:10px;
 
     }
     .checkBoxSec p{
@@ -765,7 +799,8 @@ text-align: center;
     height:100px;
     margin-bottom: 15px;
     padding-top: 5px;
-    background-color:var(--softGold);
+    background-color:var(--warmRed);
+    color:#fff;
     }
     .optional{
     font-size: 11px;
@@ -841,5 +876,5 @@ text-align: center;
     color:white;
     position: relative;
     z-index: 9;
-    border-top: 5px var(--softGold) solid;
+    border-top: 5px var(--warmRed) solid;
     }

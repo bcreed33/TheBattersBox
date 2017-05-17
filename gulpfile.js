@@ -25,13 +25,13 @@ gulp.task('mincss', function() {
 
 
 
-var imagemin = require('gulp-imagemin');
+//var imagemin = require('gulp-imagemin');
 
-gulp.task('minimg', () =>
-    gulp.src('working/img/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('img/'))
-);
+//gulp.task('minimg', () =>
+//    gulp.src('working/img/*')
+//        .pipe(imagemin())
+//        .pipe(gulp.dest('img/'))
+//);
 
 
 
@@ -64,10 +64,10 @@ gulp.task('catFoodjs', function () {
 var watch = require('gulp-watch');
 gulp.task('watch', function(){
     gulp.watch('working/css/*.css', ['mincss']);
-    gulp.watch('working/img/*', ['minimg']);
+    //gulp.watch('working/img/*', ['minimg']);
      gulp.watch('working/js/*.js', ['catjs']);
      gulp.watch('working/json/*.js', ['catFoodjs']);
 
 });
 
-gulp.task('default', ['mincss','catjs','catFoodjs','minimg', 'watch'])
+gulp.task('default', ['mincss','catjs','catFoodjs', 'watch'])
