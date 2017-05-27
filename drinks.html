@@ -95,8 +95,9 @@
 
  <div class="containe-fluid section1">
      <div class="container">
-              <h2>On Tap</h2> <hr class="hrcolor"/>
-    <div id="onTap" class="menuItemSection"></div>
+              <h2 id="beerheading">On Tap</h2> <hr class="hrcolor"/>
+    <div id="onTap" class="beerRow col-xs-12 col-sm-6"></div>
+    <div id="onTap2" class="beerRow col-xs-12 col-sm-6"></div>
      </div>
     </div>
 
@@ -105,63 +106,51 @@
 </div>
 
 
- <div class="containe-fluid section2">
-     <div class="container">
-              <h2>Cocktails</h2> <hr class="hrcolor"/>
-            <div id="ctail" class="menuItemSection"></div>
-     </div>
+<div class="containe-fluid section2">
+<div class="container">
+<h2>Cocktails</h2> <hr class="hrcolor"/>
+<div id="ctail" class="cocktailRow col-xs-12 col-sm-9"></div>
 </div>
+</div>
+
 
 <div class="midPageImgSection" id="whiskey">
-
 </div>
- <div class="containe-fluid section1">
-     <div class="container">
-
-             <h2>The Whiskey Shelf</h2><hr class="hrcolor"/>
-        <div class="menuItemSection">
-        <div class="col-xs-12 col-sm-6">
 
 
-            <div id="americanWhiskey">
-                <h2>American</h2>
-            </div>
-        </div>
-         <div class="col-xs-12 col-sm-6">
-
-            <div id="importedWhiskey">
-                <h2>Imported</h2>
-            </div>
-        </div>
+<div class="containe-fluid section1">
+<div class="container">
+<h2>The Whiskey Shelf</h2>
+<hr class="hrcolor"/>
+<div id="americanWhiskey" class="whiskeyRow col-xs-12 col-sm-6">
+<h2>American</h2>
 </div>
-     </div>
+<div id="importedWhiskey" class="whiskeyRow col-xs-12 col-sm-6">
+<h2>Imported</h2>
 </div>
+</div>
+</div>
+
 
 
 
 <div class="midPageImgSection" id="wine">
-
 </div>
- <div class="containe-fluid section2">
-     <div class="container">
-              <h2>Our Wine Rack</h2>
-              <hr class="hrcolor"/>
-                      <div class="menuItemSection">
-         <div class="col-xs-12 col-sm-6">
 
-            <div id="redWine">
+
+<div class="containe-fluid section2">
+<div class="container">
+<h2>Our Wine Rack</h2>
+<hr class="hrcolor"/>
+<div id="redWine" class="wineRow col-xs-12 col-sm-6">
 <h2>Red Wine</h2>
-             </div>
-         </div>
-         <div class="col-xs-12 col-sm-6">
-
-            <div id="whiteWine">
-<h2>White Wine</h2>
-            </div>
-         </div>
-     </div>
- </div>
 </div>
+<div id="whiteWine" class="wineRow col-xs-12 col-sm-6">
+<h2>White Wine</h2>
+</div>
+</div>
+</div>
+
 
 
 
@@ -254,5 +243,30 @@
 <!--All other js files-->
 <script src="js/allscript.js"></script>
 <script src="js/allfood.js"></script>
+<script>
+//Adds a class to the secondary nav when the screen width is below 900px
+$(document).ready(function(){
+
+$(window).on('resize', function() {
+    if($(window).width() < 900) {
+        $('.secondaryNav').addClass('secondaryNavMoblie');
+    }
+});
+
+
+$(window).scroll(function(){
+var moblieSecNavScroll =253;
+if($(window).scrollTop() >= moblieSecNavScroll){
+$('.secondaryNavMoblie').addClass("secondaryNavMobliePosition");
+$('.navbar').removeClass("navbar-fixed-top");
+    }else{
+        $('.secondaryNavMoblie').removeClass("secondaryNavMobliePosition");
+    }
+});
+
+
+});
+
+</script>
 </body>
 </html>

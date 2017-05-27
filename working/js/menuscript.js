@@ -1,8 +1,8 @@
 $(document).ready(function(){
    var appstring = "";
 for(var i = 0; i < apps.length; i++){
-appstring += '<div class="menuChoice"> <div class="foodName">' +
-apps[i].name + '</div> <div class="foodPrice">' +
+appstring += '<div class="menuChoice"> <div class="foodName col-xs-12 col-sm-10">' +
+apps[i].name + '</div> <div class="foodPrice col-xs-12 col-sm-2">' +
 apps[i].price + '</div> <div class="foodNote">' +
 apps[i].note + '</div></div>';}
 $("#apps").append(appstring);
@@ -10,37 +10,28 @@ $("#apps").append(appstring);
 
    var saladstring = "";
 for(var i = 0; i < salad.length; i++){
-saladstring += '<div class="menuChoice"> <div class="foodName">' +
-salad[i].name + '</div> <div class="foodPrice">' +
-salad[i].price + '</div> <div class="foodNote">' +
+saladstring += '<div class="menuChoice"> <div class="foodName col-xs-12 col-sm-10">' +
+salad[i].name + '</div> <div class="foodPrice col-xs-12 col-sm-2">' +
+salad[i].price + '</div> <div class="foodNote col-xs-12">' +
 salad[i].note + '</div></div>';}
 $("#salad").append(saladstring);
 
 
    var tacostring = "";
 for(var i = 0; i < tacos.length; i++){
-tacostring += '<div class="menuChoice"> <div class="foodName">' +
-tacos[i].name + '</div> <div class="foodPrice">' +
-tacos[i].price + '</div> <div class="foodNote">' +
+tacostring += '<div class="menuChoice"> <div class="foodName col-xs-12 col-sm-10">' +
+tacos[i].name + '</div> <div class="foodPrice col-xs-12 col-sm-2">' +
+tacos[i].price + '</div> <div class="foodNote col-xs-12">' +
 tacos[i].note + '</div> </div>';}
 $("#taco").append(tacostring);
-
-
-       var hoagiestring = "";
-for(var i = 0; i < hoagies.length; i++){
-hoagiestring += '<div class="menuChoice"> <div class="foodName">' +
-hoagies[i].name + '</div> <div class="foodPrice">' +
-hoagies[i].price + '</div> <div class="foodNote">' +
-hoagies[i].note + '</div></div>';}
-$("#hoagie").append(hoagiestring);
 
 
 
 var burgersstring = "";
 for(var i = 0; i < burgers.length; i++){
-burgersstring += '<div class="menuChoice"> <div class="foodName">' +
-burgers[i].name + '</div> <div class="foodPrice">' +
-burgers[i].price + '</div> <div class="foodNote">' +
+burgersstring += '<div class="menuChoice"> <div class="foodName col-xs-12 col-sm-10">' +
+burgers[i].name + '</div> <div class="foodPrice col-xs-12 col-sm-2">' +
+burgers[i].price + '</div> <div class="foodNote col-xs-12">' +
 burgers[i].note + '</div></div>';}
 $("#burger").append(burgersstring);
 
@@ -55,6 +46,12 @@ onTap[i].name + '</div> <div class="drinkNote">' +
 onTap[i].beertype + '</div></div>';}
 $("#onTap").append(onTapString);
 
+var onTapString = "";
+for(var i = 0; i < onTap2.length; i++){
+onTapString += '<div class="drinkChoice"><div class="foodName">' +
+onTap2[i].name + '</div> <div class="drinkNote">' +
+onTap2[i].beertype + '</div></div>';}
+$("#onTap2").append(onTapString);
 
 
 var cocktailsString = "";
@@ -67,26 +64,26 @@ $("#ctail").append(cocktailsString);
 //Whiskey Drinks
 var americanWhiskeyString = "";
 for(var i = 0; i < americanWhiskey.length; i++){
-americanWhiskeyString += '<div class="whiskeyDrink">' + americanWhiskey[i] + '</div></div>';}
+americanWhiskeyString += '<div class="whiskeyDrink">' + americanWhiskey[i] + '</div>';}
 $("#americanWhiskey").append(americanWhiskeyString);
 
 
 var importedWhiskeyString = "";
 for(var i = 0; i < importedWhiskey.length; i++){
-importedWhiskeyString += '<div class="whiskeyDrink">' + importedWhiskey[i] + '</div></div>';}
+importedWhiskeyString += '<div class="whiskeyDrink">' + importedWhiskey[i] + '</div>';}
 $("#importedWhiskey").append(importedWhiskeyString);
 
 
 //Wine Drinks
 var redWineString = "";
 for(var i = 0; i < redWine.length; i++){
-redWineString += '<div class="whiskeyDrink">' + redWine[i] + '</div></div>';}
+redWineString += '<div class="wineDrink">' + redWine[i] + '</div></div>';}
 $("#redWine").append(redWineString);
 
 
 var whiteWineString = "";
 for(var i = 0; i < whiteWine.length; i++){
-whiteWineString += '<div class="whiskeyDrink">' + whiteWine[i] + '</div></div>';}
+whiteWineString += '<div class="wineDrink">' + whiteWine[i] + '</div></div>';}
 $("#whiteWine").append(whiteWineString);
 
 

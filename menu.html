@@ -78,16 +78,16 @@
 
 
 
-<!--<div class="secondaryNav">
+<div class="secondaryNav">
     <a href="#applink" class="sideNavOption">Apps</a>
     <a href="#saladlink" class="sideNavOption">Salads</a>
     <a href="#tacolink" class="sideNavOption">Tacos</a>
-    <!--<a href="#hoagielink" class="sideNavOption">Hoagies</a>--><!--
+    <!--<a href="#hoagielink" class="sideNavOption">Hoagies</a>-->
     <a href="#burgerlink" class="sideNavOption">Burger</a>
-</div>   -->
+</div>
 
 <div class="page-header menu-page-header" id="applink">
-    <div class="text-center blackOpcity">  
+    <div class="text-center blackOpcity">
     <h1>Menu</h1>
     </div>
 </div>
@@ -95,8 +95,9 @@
 
 <div class="containe-fluid section1">
     <div class="container">
-        <h2>Apps</h2><hr class="hrcolor"/>
-        <div id="apps" class="menuItemSection"></div>
+        <h2>Appetizers</h2>
+        <hr class="hrcolor"/>
+        <div id="apps" class=" appItems col-xs-12 col-sm-10 col-md-8"></div>
     </div>
 </div>
 
@@ -104,8 +105,9 @@
 
 <div class="containe-fluid section1">
     <div class="container">
-        <h2>Salads</h2><hr class="hrcolor"/>
-        <div id="salad" class="menuItemSection"></div>
+        <h2>Salads</h2>
+        <hr class="hrcolor"/>
+        <div id="salad" class=" saladItems col-xs-12 col-sm-10 col-md-8"></div>
     </div>
 </div>
 
@@ -113,26 +115,19 @@
 
 <div class="containe-fluid section1">
     <div class="container">
-        <h2>Tacos</h2><hr class="hrcolor"/>
-        <div id="taco" class="menuItemSection"></div>
+        <h2>Tacos</h2>
+        <hr class="hrcolor"/>
+        <div id="taco" class=" tacoItems col-xs-12 col-sm-10 col-md-8"></div>
     </div>
 </div>
-
-  <!--  <div class="midPageImgSection" id="hoagielink"></div>
-
-<div class="containe-fluid section1">
-    <div class="container">
-        <h2>Hoagies</h2>
-        <div id="hoagie" class="menuItemSection"></div>
-    </div>
-</div>-->
 
     <div class="midPageImgSection" id="burgerlink"></div>
 
 <div class="containe-fluid section1">
     <div class="container">
-        <h2>Burgers</h2><hr class="hrcolor"/>
-        <div id="burger" class="menuItemSection"></div>
+        <h2>Burgers</h2>
+        <hr class="hrcolor"/>
+        <div id="burger" class=" burgerItems col-xs-12 col-sm-10 col-md-8"></div>
     </div>
 </div>
 
@@ -228,5 +223,30 @@
 <!--All other js files-->
 <script src="js/allscript.js"></script>
 <script src="js/allfood.js"></script>
+<script>
+//Adds a class to the secondary nav when the screen width is below 900px
+$(document).ready(function(){
+
+$(window).on('resize', function() {
+    if($(window).width() < 900) {
+        $('.secondaryNav').addClass('secondaryNavMoblie');
+    }
+});
+
+
+$(window).scroll(function(){
+var moblieSecNavScroll =253;
+if($(window).scrollTop() >= moblieSecNavScroll){
+$('.secondaryNavMoblie').addClass("secondaryNavMobliePosition");
+$('.navbar').removeClass("navbar-fixed-top");
+    }else{
+        $('.secondaryNavMoblie').removeClass("secondaryNavMobliePosition");
+    }
+});
+
+
+});
+
+</script>
 </body>
 </html>

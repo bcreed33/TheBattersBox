@@ -16,7 +16,7 @@ var cleanCSS = require('gulp-clean-css');
 var concatCss = require('gulp-concat-css');
 gulp.task('mincss', function() {
   return gulp.src(['working/css/reset.css',
-                  'working/css/mainstyle.css'])
+                  'working/css/style.css'])
   .pipe(concatCss("cssbundle.css"))
    .pipe(cleanCSS())
 .pipe(gulp.dest('css/'));
@@ -56,18 +56,27 @@ gulp.task('catFoodjs', function () {
 });
 
 
+//sass
+var sass = require('gulp-sass');
 
+gulp.task('sass', function () {
+  return gulp.src('working/sass/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('working/css/'));
+});
 
 
 
 
 var watch = require('gulp-watch');
 gulp.task('watch', function(){
+    gulp.watch('working/sass/*.scss', ['sass']);
     gulp.watch('working/css/*.css', ['mincss']);
     //gulp.watch('working/img/*', ['minimg']);
      gulp.watch('working/js/*.js', ['catjs']);
      gulp.watch('working/json/*.js', ['catFoodjs']);
 
+
 });
 
-gulp.task('default', ['mincss','catjs','catFoodjs', 'watch'])
+gulp.task('default', ['sass','mincss','catjs','catFoodjs', 'watch'])
