@@ -717,8 +717,26 @@ input:focus, textarea:focus {
 
 /* END Contact Styles//////////////////////////////////////////////////////// */
 /*Footer//////////////////////////////////////////////////////////////////////*/
+.footerCol {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  height: 110px;
+  margin-bottom: 55px; }
+
+.footerHeader {
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  height: auto; }
+
+.footerSMicon {
+  display: block;
+  width: 100px; }
+
 #footer {
-  min-height: 200px;
+  min-height: 250px;
   padding: 50px 0;
   background-color: #2e2e2e;
   color: white;

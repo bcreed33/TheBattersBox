@@ -923,10 +923,30 @@ clear: both;
 
 /* END Contact Styles//////////////////////////////////////////////////////// */
 /*Footer//////////////////////////////////////////////////////////////////////*/
+.footerCol{
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    height: 110px;
+    margin-bottom:55px;
+}
+.footerHeader{
+    font-size: 24px;
+    line-height: 28px;
+    //border-bottom:1px solid #fff;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    height: auto;
+}
+.footerSMicon{
+display: block;
+width:100px;
 
+
+}
 
 #footer{
-min-height: 200px;
+min-height: 250px;
 padding: 50px 0;
 background-color:$darkGrey;
 color:white;
