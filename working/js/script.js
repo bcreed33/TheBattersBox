@@ -16,6 +16,8 @@
 //});
 
 
+
+
   //Parallax effect in the hero
  $(document).ready(function(){
 

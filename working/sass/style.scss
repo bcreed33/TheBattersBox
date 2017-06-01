@@ -107,6 +107,10 @@ background-color:#fff !important;
 border-bottom:#000 solid 7px;
 color:$darkBlue !important;}
 }
+.navbar-brand>img {
+    display: block;
+    width: 160px;
+}
 .page-header{
 display: block;
 width: 100%;
@@ -168,20 +172,20 @@ left:0;
 width:100%;
 width: 175px;
 height: 50px;
-font: 20px;
+font-size: 20px;
 display: block;
 text-align: center;
 background: -webkit-linear-gradient(90deg,#000 0,transparent);
-background: linear-gradient(90deg,$lightBlue 0,transparent);
+background: linear-gradient(90deg,#000 0,transparent);
 margin: 5px 0;
 line-height: 50px;
 color: #fff;
 transition: all .1s ease-in-out;
-:hover{
-width: 200px;
-font-size: 24px;
-color:#fff;
-}
+border-top: 1px solid #fff;
+border-bottom: 1px solid #fff;
+
+
+
 }
 
 .secondaryNavMobliePosition{
@@ -323,18 +327,22 @@ left:28%;
 z-index: 10000;
 }
 @media (max-width: 900px) {
-.beer, .burger{
+.beer {
 left:0;
-right:0;
+
+}
+.burger{
+    right:0;
 }
 }
-@media (max-width: 550px) {
+@media (max-width:600px) {
 #heroBackgroundImage{
 height: 500px;
 }
 .beer{
 background-position: right center;
-left:0
+left:0;
+top: 120px;
 }
 .burger{
 display: none;
@@ -355,6 +363,13 @@ margin-bottom:40px;
 }
 .topthreeCTAs{
 margin-top:50px;
+}
+.topCTA{
+    margin-bottom:25px;
+    h3{
+        margin-bottom:20px;
+    }
+
 }
 .drinksCTA{
 font-size: 3em;
@@ -442,27 +457,6 @@ font-size: 24px;
 /*end Index Styles////////////////////////////////////////////////////////////*/
 /*Menu page Styles////////////////////////////////////////////////////////////*/
 
-
-#saladlink{
-background: url(../img/saladBowl.jpg) no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;}
-#tacolink{
-background: url(../img/spicyTaco.jpg) no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-}
-#burgerlink{
-background: url(../img/burgerPlate.jpg) no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-}
 #applink{
 background: url(../img/pizzaApp.jpg) no-repeat center top fixed;
 -webkit-background-size: cover;
@@ -470,6 +464,29 @@ background: url(../img/pizzaApp.jpg) no-repeat center top fixed;
 -o-background-size: cover;
 background-size: cover;
 }
+
+.tacolink{
+background: url(../img/spicyTaco.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.burgerlink{
+background: url(../img/burgerPlate.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.saladlink{
+background: url(../img/saladBowl.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;}
+
+
 .menu-page-header{
 background: url(../img/sportsBarPeople.jpg) no-repeat center bottom fixed;
 -webkit-background-size: cover;
@@ -521,6 +538,12 @@ display: block;
 }
 
  @media(max-width:768px){
+     .saladlink, .tacolink, .burgerlink{
+         display:none;
+
+     }
+
+
      .menuChoice{
           margin-bottom: 35px;
      }
@@ -568,21 +591,21 @@ background: url(../img/beerTap.jpg) no-repeat center bottom fixed;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;}
-#cocktail{
+.cocktailBG{
 background: url(../img/cocktail.jpg) no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
 }
-#whiskey{
+.whiskeyBG{
 background: url(../img/whiskeyBarrels.jpg) no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
 }
-#wine{
+.wineBG{
 background: url(../img/wineGlass.jpg) no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -676,6 +699,12 @@ margin-bottom: 20px;
 }
 
 @media(max-width:768px){
+ .cocktailBG, .whiskeyBG, .wineBG{
+        display: none;
+    }
+
+
+
     .beerRow{
         text-align: center;
     }
@@ -795,7 +824,7 @@ margin-left: auto;
 
 .eventSMicon{
 display: block;
-float: left;
+margin: 0 auto;
 width:150px;
 padding: 15px;
 }
@@ -849,6 +878,7 @@ padding:0px 35px 0 35px;
 #datepicker{
 text-align: center;
 margin-top:5px;
+color:#000;
 }
 .DatePickerSectionNoShow{
 height:100px;
@@ -923,6 +953,8 @@ clear: both;
 
 /* END Contact Styles//////////////////////////////////////////////////////// */
 /*Footer//////////////////////////////////////////////////////////////////////*/
+
+
 .footerCol{
     display: block;
     font-size: 18px;

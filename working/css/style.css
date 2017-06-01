@@ -81,6 +81,10 @@ li {
     border-bottom: #000 solid 7px;
     color: #2C4251 !important; }
 
+.navbar-brand > img {
+  display: block;
+  width: 160px; }
+
 .page-header {
   display: block;
   width: 100%;
@@ -139,19 +143,17 @@ li {
   width: 100%;
   width: 175px;
   height: 50px;
-  font: 20px;
+  font-size: 20px;
   display: block;
   text-align: center;
   background: -webkit-linear-gradient(90deg, #000 0, transparent);
-  background: linear-gradient(90deg, #2C5C67 0, transparent);
+  background: linear-gradient(90deg, #000 0, transparent);
   margin: 5px 0;
   line-height: 50px;
   color: #fff;
-  transition: all .1s ease-in-out; }
-  .sideNavOption :hover {
-    width: 200px;
-    font-size: 24px;
-    color: #fff; }
+  transition: all .1s ease-in-out;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff; }
 
 .secondaryNavMobliePosition {
   top: 0 !important;
@@ -274,16 +276,18 @@ top:0;
   z-index: 10000; }
 
 @media (max-width: 900px) {
-  .beer, .burger {
-    left: 0;
+  .beer {
+    left: 0; }
+  .burger {
     right: 0; } }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   #heroBackgroundImage {
     height: 500px; }
   .beer {
     background-position: right center;
-    left: 0; }
+    left: 0;
+    top: 120px; }
   .burger {
     display: none; } }
 
@@ -298,6 +302,11 @@ top:0;
 
 .topthreeCTAs {
   margin-top: 50px; }
+
+.topCTA {
+  margin-bottom: 25px; }
+  .topCTA h3 {
+    margin-bottom: 20px; }
 
 .drinksCTA {
   font-size: 3em;
@@ -377,29 +386,29 @@ top:0;
 
 /*end Index Styles////////////////////////////////////////////////////////////*/
 /*Menu page Styles////////////////////////////////////////////////////////////*/
-#saladlink {
-  background: url(../img/saladBowl.jpg) no-repeat center center fixed;
+#applink {
+  background: url(../img/pizzaApp.jpg) no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
-#tacolink {
+.tacolink {
   background: url(../img/spicyTaco.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
-#burgerlink {
+.burgerlink {
   background: url(../img/burgerPlate.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
-#applink {
-  background: url(../img/pizzaApp.jpg) no-repeat center top fixed;
+.saladlink {
+  background: url(../img/saladBowl.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -446,6 +455,8 @@ top:0;
     letter-spacing: .2px; }
 
 @media (max-width: 768px) {
+  .saladlink, .tacolink, .burgerlink {
+    display: none; }
   .menuChoice {
     margin-bottom: 35px; }
   .appItems .foodname, .saladItems .foodname, .tacoItems .foodname, .burgerItems .foodname {
@@ -475,21 +486,21 @@ top:0;
   -o-background-size: cover;
   background-size: cover; }
 
-#cocktail {
+.cocktailBG {
   background: url(../img/cocktail.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
-#whiskey {
+.whiskeyBG {
   background: url(../img/whiskeyBarrels.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
-#wine {
+.wineBG {
   background: url(../img/wineGlass.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -549,6 +560,8 @@ top:0;
     text-align: center; }
 
 @media (max-width: 768px) {
+  .cocktailBG, .whiskeyBG, .wineBG {
+    display: none; }
   .beerRow {
     text-align: center; }
   .cocktailRow .drinkChoice {
@@ -604,7 +617,7 @@ top:0;
 /*Contact page Styles/////////////////////////////////////////////////////////*/
 .eventSMicon {
   display: block;
-  float: left;
+  margin: 0 auto;
   width: 150px;
   padding: 15px; }
 
@@ -657,7 +670,8 @@ input[type='checkbox'] {
 
 #datepicker {
   text-align: center;
-  margin-top: 5px; }
+  margin-top: 5px;
+  color: #000; }
 
 .DatePickerSectionNoShow {
   height: 100px;

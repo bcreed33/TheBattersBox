@@ -6,7 +6,7 @@
 <meta name="viewport" content="initial-scale=1.0,width=device-width,maximum-scale=1,minimum-scale=1,user-scalable=no" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta charset="utf-8">
-<link href="#" type="image/x-icon" rel="shorcut icon">
+<link href="img/favicon.ico" type="image/x-icon" rel="shorcut icon">
 <title>Batters Box Bar</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -101,9 +101,12 @@
     </div>
 </div>
 
-    <div class="midPageImgSection" id="saladlink"></div>
 
-<div class="containe-fluid section1">
+
+<div id="saladlink"></div>
+    <div class="midPageImgSection saladlink"></div>
+
+<div class="containe-fluid section2">
     <div class="container">
         <h2>Salads</h2>
         <hr class="hrcolor"/>
@@ -111,7 +114,9 @@
     </div>
 </div>
 
-    <div class="midPageImgSection" id="tacolink"></div>
+
+<div id="tacolink"></div>
+    <div class="midPageImgSection tacolink"></div>
 
 <div class="containe-fluid section1">
     <div class="container">
@@ -121,9 +126,11 @@
     </div>
 </div>
 
-    <div class="midPageImgSection" id="burgerlink"></div>
 
-<div class="containe-fluid section1">
+<div id="burgerlink"></div>
+    <div class="midPageImgSection burgerlink"></div>
+
+<div class="containe-fluid section2">
     <div class="container">
         <h2>Burgers</h2>
         <hr class="hrcolor"/>
@@ -218,26 +225,26 @@
 <script>
 //Adds a class to the secondary nav when the screen width is below 900px
 $(document).ready(function(){
+    $(window).on('resize', function() {
+        if($(window).width() < 900) {
+            $('.secondaryNav').addClass('secondaryNavMoblie');
 
-$(window).on('resize', function() {
-    if($(window).width() < 900) {
-        $('.secondaryNav').addClass('secondaryNavMoblie');
-    }
+            $(window).scroll(function(){
+                    var moblieSecNavScroll =253;
+                if($(window).scrollTop() >= moblieSecNavScroll){
+                    $('.secondaryNavMoblie').addClass("secondaryNavMobliePosition");
+                    $('.navbar').removeClass("navbar-fixed-top");
+                }else{
+                    $('.secondaryNavMoblie').removeClass("secondaryNavMobliePosition");
+                }
+            });
+        }
+    });
 });
 
-
-$(window).scroll(function(){
-var moblieSecNavScroll =253;
-if($(window).scrollTop() >= moblieSecNavScroll){
-$('.secondaryNavMoblie').addClass("secondaryNavMobliePosition");
-$('.navbar').removeClass("navbar-fixed-top");
-    }else{
-        $('.secondaryNavMoblie').removeClass("secondaryNavMobliePosition");
-    }
-});
-
-
-});
+//Loading the smoothScroll.js only when the user
+if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent))
+document.write('<script src="js/smoothScroll.js"><\/script>');
 
 </script>
 </body>
