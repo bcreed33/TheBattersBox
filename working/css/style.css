@@ -58,33 +58,6 @@ li {
   height: 2px;
   background-color: #D16656; }
 
-.navbar {
-  margin-bottom: 0px;
-  background-color: #fff;
-  color: #fff;
-  border: none;
-  height: 75px;
-  border-bottom: 7px solid #2C4251; }
-  .navbar a {
-    color: #000 !important;
-    height: 75px;
-    min-width: 100px !important;
-    line-height: 45px !important;
-    text-align: center;
-    font-size: 18px;
-    letter-spacing: 1px;
-    transition: all .1s ease-in-out; }
-  .navbar a:hover {
-    border-bottom: #D16656 solid 7px; }
-  .navbar .active a {
-    background-color: #fff !important;
-    border-bottom: #000 solid 7px;
-    color: #2C4251 !important; }
-
-.navbar-brand > img {
-  display: block;
-  width: 160px; }
-
 .page-header {
   display: block;
   width: 100%;
@@ -126,6 +99,35 @@ li {
   height: 100%;
   background: rgba(1, 1, 1, 0.5); }
 
+/*end of Global styles////////////////////////////////////////////////////////*/
+/* Nav styles////////////////////////////////////////////////////////////////*/
+.navbar {
+  margin-bottom: 0px;
+  background-color: #fff;
+  color: #fff;
+  border: none;
+  height: 75px;
+  border-bottom: 7px solid #2C4251; }
+  .navbar a {
+    color: #000;
+    height: 75px;
+    min-width: 100px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: all .1s ease-in-out; }
+  .navbar a:hover {
+    border-bottom: #D16656 solid 7px; }
+  .navbar .active a {
+    background-color: #fff;
+    border-bottom: #000 solid 7px;
+    color: #2C4251; }
+
+.navbar-brand > img {
+  display: block;
+  width: 200px; }
+
 .secondaryNav {
   width: 10%;
   max-width: 200px;
@@ -137,7 +139,8 @@ li {
   font-size: 20px; }
 
 .secondaryNavPosition {
-  left: 0; }
+  left: 0;
+  transition: all .5s ease-in; }
 
 .sideNavOption {
   width: 100%;
@@ -158,6 +161,9 @@ li {
 .secondaryNavMobliePosition {
   top: 0 !important;
   position: fixed !important; }
+
+#monlieNavCloseBtn {
+  display: none; }
 
 @media (max-width: 900px) {
   .secondaryNav {
@@ -184,14 +190,75 @@ position:fixed !important;
 top:0;
 
 }*/
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin: 0;
+    height: 100%; }
+    .navbar-nav a {
+      color: #fff;
+      height: 14%;
+      max-height: 50px;
+      margin: 1%;
+      line-height: 20px; }
+    .navbar-nav a:hover {
+      border-bottom: none; }
+    .navbar-nav a:focus {
+      background-color: #2C4251; }
+    .navbar-nav .active a {
+      background-color: #2C5C67;
+      border: none;
+      color: #fff; }
+  .topMoblieLink {
+    margin-top: 50px; }
+  #monlieNavCloseBtn {
+    display: block;
+    width: 100%; }
+    #monlieNavCloseBtn a {
+      display: block;
+      width: 100px;
+      height: 45px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #2C4251;
+      float: right;
+      line-height: 22px; }
+  div#bs-example-navbar-collapse-1 {
+    color: #fff !important;
+    background: #222;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    z-index: 99999;
+    transition: all .35s ease;
+    padding: 10px 25px; }
+  .navbar-header button {
+    background-color: #2C4251;
+    font-family: "Ubuntu", sans-serif;
+    width: 150px;
+    height: 45px; }
+  .navbar-header button:hover {
+    background-color: #2C5C67; }
+  .navbar-header button:focus {
+    background-color: #2C5C67; } }
+
 @media (max-width: 450px) {
+  .navbar-brand > img {
+    margin-top: 7px;
+    width: 130px; }
+  .navbar-header button {
+    width: 70px; }
   .sideNavOption {
     width: 50%;
     margin: 0px; }
     .sideNavOption :hover {
       width: 50%; } }
 
-/*end of Global styles////////////////////////////////////////////////////////*/
+/*end of Nav styles////////////////////////////////////////////////////////*/
 /*hero section////////////////////////////////////////////////////////////////*/
 .navbar-brand {
   padding: 10px 15px !important; }
@@ -249,7 +316,7 @@ top:0;
   position: absolute;
   top: 27%;
   margin-top: -100px;
-  z-index: 9999; }
+  z-index: 999; }
 
 .beer {
   width: 100%;
@@ -273,7 +340,7 @@ top:0;
   position: absolute;
   bottom: 0;
   left: 28%;
-  z-index: 10000; }
+  z-index: 1000; }
 
 @media (max-width: 900px) {
   .beer {

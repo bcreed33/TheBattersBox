@@ -16,6 +16,32 @@ $paraFont: 'Ubuntu', sans-serif;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*sections////////////////////////////////////////////////////////////////////*/
 
 
@@ -82,35 +108,7 @@ font-family: $paraFont !important;
 height: 2px;
 background-color:$warmRed;
 }
-.navbar{
-margin-bottom: 0px;
-background-color:#fff;
-color:#fff;
-border:none;
-height: 75px;
-border-bottom: 7px solid $darkBlue;
-a{
-color:#000 !important;
-height: 75px;
-min-width:100px !important;
-line-height:45px !important;
-text-align: center;
-font-size: 18px;
-letter-spacing:1px;
-transition: all .1s ease-in-out;
-}
-a:hover{
-border-bottom:$warmRed solid 7px;
-}
-.active a{
-background-color:#fff !important;
-border-bottom:#000 solid 7px;
-color:$darkBlue !important;}
-}
-.navbar-brand>img {
-    display: block;
-    width: 160px;
-}
+
 .page-header{
 display: block;
 width: 100%;
@@ -154,6 +152,42 @@ width: 100%;
 height: 100%;
 background: rgba(1,1,1,.5);
 }
+
+
+/*end of Global styles////////////////////////////////////////////////////////*/
+/* Nav styles////////////////////////////////////////////////////////////////*/
+.navbar{
+margin-bottom: 0px;
+background-color:#fff;
+color:#fff;
+border:none;
+height: 75px;
+border-bottom: 7px solid $darkBlue;
+a{
+color:#000;
+height: 75px;
+min-width:100px;
+line-height:45px;
+text-align: center;
+font-size: 18px;
+letter-spacing:1px;
+transition: all .1s ease-in-out;
+}
+a:hover{
+border-bottom:$warmRed solid 7px;
+}
+.active{
+a{
+background-color:#fff;
+border-bottom:#000 solid 7px;
+color:$darkBlue;}
+}
+}
+.navbar-brand>img {
+display: block;
+width:200px;
+}
+
 .secondaryNav{
 width:10%;
 max-width:200px;
@@ -166,7 +200,7 @@ font-size: 20px;
 }
 .secondaryNavPosition{
 left:0;
-//transition: all 1s ease-in;
+transition: all .5s ease-in;
 }
 .sideNavOption{
 width:100%;
@@ -189,21 +223,23 @@ border-bottom: 1px solid #fff;
 }
 
 .secondaryNavMobliePosition{
- top:0 !important;
- position: fixed !important;
+top:0 !important;
+position: fixed !important;
 }
 
-
+#monlieNavCloseBtn{
+display: none;
+}
 
 @media (max-width: 900px) {
 .secondaryNav{
-    width: 100%;
-    max-width: 100%;
-    height: 45px;
-    top: 375px;
-    left: 0;
-    position:absolute;
-    z-index:1;
+width: 100%;
+max-width: 100%;
+height: 45px;
+top: 375px;
+left: 0;
+position:absolute;
+z-index:1;
 
 }
 
@@ -226,8 +262,96 @@ position:fixed !important;
 top:0;
 
 }*/
-@media(max-width:768px){}
+@media(max-width:768px){
+.navbar-nav{
+margin: 0;
+height: 100%;
+a{
+
+color: #fff;
+height:14%;
+max-height:50px;
+margin: 1%;
+line-height:20px
+}
+
+a:hover{
+border-bottom:none;
+
+}
+a:focus{
+background-color:$darkBlue;
+}
+.active a{
+background-color:$lightBlue;
+border:none;
+color:#fff;}
+
+}
+
+
+.topMoblieLink{
+margin-top: 50px;
+}
+#monlieNavCloseBtn{
+display: block;
+width: 100%;
+a{
+display: block;
+width: 100px;
+height: 45px;
+position: absolute;
+top: 0;
+right: 0;
+background:$darkBlue;
+float: right;
+line-height: 22px;
+}
+}
+div#bs-example-navbar-collapse-1{
+color: #fff !important;
+background:#222;
+position:fixed;
+top: 0;
+bottom: 0;
+left: 0;
+width: 100%;
+min-height: 100% ;
+margin: 0;
+z-index:99999;
+transition:all .35s ease;
+padding: 10px 25px;
+}
+.navbar-header{
+button{
+background-color:$darkBlue;
+font-family:$paraFont;
+width:150px;
+height: 45px;
+
+}
+button:hover{
+background-color:$lightBlue;
+}
+button:focus{
+background-color:$lightBlue;
+}
+}
+
+
+
+
+}
 @media(max-width:450px){
+.navbar-brand>img {
+margin-top: 7px;
+width:130px;
+}
+.navbar-header{
+button{
+width:70px;
+}
+}
 .sideNavOption{
 width:50%;
 margin: 0px;
@@ -239,7 +363,7 @@ width:50%;
 @media(max-width:325px){}
 
 
-/*end of Global styles////////////////////////////////////////////////////////*/
+/*end of Nav styles////////////////////////////////////////////////////////*/
 /*hero section////////////////////////////////////////////////////////////////*/
 
 
@@ -300,7 +424,7 @@ background-repeat: no-repeat;
 position: absolute;
 top:27%;
 margin-top: -100px;
-z-index: 9999;
+z-index:999;
 }
 .beer{
 width:100%;
@@ -324,7 +448,7 @@ background-size: contain;
 position: absolute;
 bottom:0;
 left:28%;
-z-index: 10000;
+z-index:1000;
 }
 @media (max-width: 900px) {
 .beer {
@@ -332,7 +456,7 @@ left:0;
 
 }
 .burger{
-    right:0;
+right:0;
 }
 }
 @media (max-width:600px) {
@@ -365,10 +489,10 @@ margin-bottom:40px;
 margin-top:50px;
 }
 .topCTA{
-    margin-bottom:25px;
-    h3{
-        margin-bottom:20px;
-    }
+margin-bottom:25px;
+h3{
+margin-bottom:20px;
+}
 
 }
 .drinksCTA{
@@ -501,82 +625,82 @@ line-height: 125px;
 }
 }
 .menuChoice{
-    font-family: $paraFont;
-    margin-bottom: 10px;
+font-family: $paraFont;
+margin-bottom: 10px;
 min-height: 75px;
 display: block;
 }
 
 
 .appItems, .saladItems, .tacoItems, .burgerItems{
-    display: block;
-    margin: 0 auto;
-    float: none;
+display: block;
+margin: 0 auto;
+float: none;
 
 .foodname{
-    //width: 75%;
-    float: left;
-    display:block;
-    font-size: 26px;
-    line-height: 36px;
+//width: 75%;
+float: left;
+display:block;
+font-size: 26px;
+line-height: 36px;
 }
 .foodPrice{
-    //width:25%;
-    float:right;
-    display:block;
-    text-align: right;
-    font-size: 26px;
-    line-height: 36px;
+//width:25%;
+float:right;
+display:block;
+text-align: right;
+font-size: 26px;
+line-height: 36px;
 }
 .foodNote{
-    clear: both;
-    font-size: 16px;
-    line-height: 20px;
-    text-indent: 20px;
-    letter-spacing: .2px;
-    }
+clear: both;
+font-size: 16px;
+line-height: 20px;
+text-indent: 20px;
+letter-spacing: .2px;
+}
 }
 
- @media(max-width:768px){
-     .saladlink, .tacolink, .burgerlink{
-         display:none;
+@media(max-width:768px){
+.saladlink, .tacolink, .burgerlink{
+display:none;
 
-     }
+}
 
 
-     .menuChoice{
-          margin-bottom: 35px;
-     }
+.menuChoice{
+margin-bottom: 35px;
+}
 .appItems, .saladItems, .tacoItems, .burgerItems{
-     .foodname{
+.foodname{
 text-align: center;
 
-     }
-     .foodPrice{
+}
+.foodPrice{
 
 text-align: center;
 
-     }
-     .foodNote{
+}
+.foodNote{
 width: 100%;
 max-width:400px;
-    text-indent:0px;
-    margin: 0 auto;
-    float: none;
+text-indent:0px;
+margin: 0 auto;
+float: none;
 }
 }
- }
+}
 
 @media(max-width:450px){
-    .appItems, .saladItems, .tacoItems, .burgerItems{
-    .foodname{
-        font-size: 22px;
-        line-height:26px;
+.appItems, .saladItems, .tacoItems, .burgerItems{
+.foodname{
+font-size: 22px;
+line-height:26px;
 
-    }
- .foodNote{
-     font-size: 12px;
- } }
+}
+.foodNote{
+font-size: 12px;
+} }
 
 }
 
@@ -617,15 +741,15 @@ background-size: cover;
 
 
 .foodName, .drinkNote, .whiskeyDrink, .wineDrink{
-    font-family: $paraFont;
+font-family: $paraFont;
 }
 
 
 
 
 .drinkChoice{
-    display: block;
-    margin:2.5px;
+display: block;
+margin:2.5px;
 
 }
 
@@ -633,36 +757,36 @@ background-size: cover;
 
 .beerRow{
 .foodName{
-    font-size:26px;
+font-size:26px;
 line-height: 36px;
 }
 .drinkNote{
-    font-size:18px;
-    line-height:26px;
+font-size:18px;
+line-height:26px;
 }
 }
 
 
 
 .cocktailRow{
-    display: block;
-    margin: 0 auto;
-    float: none;
+display: block;
+margin: 0 auto;
+float: none;
 
-    .drinkChoice{
-        margin-top:10px;
-        margin-bottom: 10px;
-    }
+.drinkChoice{
+margin-top:10px;
+margin-bottom: 10px;
+}
 .foodName{
-    font-size:26px;
+font-size:26px;
 line-height: 32px;
 }
 .drinkNote{
-    font-size: 14px;
-    line-height: 16px;
-    margin-top: 5px;
-    letter-spacing: 0.5px;
-    text-indent: 20px;
+font-size: 14px;
+line-height: 16px;
+margin-top: 5px;
+letter-spacing: 0.5px;
+text-indent: 20px;
 }
 }
 
@@ -670,105 +794,105 @@ line-height: 32px;
 
 .whiskeyRow{
 margin-bottom: 20px;
-    h2{
-        text-align: center;
-        padding-bottom: 10px;
-    }
+h2{
+text-align: center;
+padding-bottom: 10px;
+}
 .whiskeyDrink{
-    font-size: 20px;
-    line-height:30px;
-        text-align: center;
+font-size: 20px;
+line-height:30px;
+text-align: center;
 }
 }
 
 
 .wineRow{
-    margin-bottom: 20px;
+margin-bottom: 20px;
 
-    h2{
-        text-align: center;
-        padding-bottom: 10px;
+h2{
+text-align: center;
+padding-bottom: 10px;
 
-    }
+}
 .wineDrink{
-    font-size: 20px;
-    line-height:30px;
-    text-align: center;
+font-size: 20px;
+line-height:30px;
+text-align: center;
 
 }
 }
 
 @media(max-width:768px){
- .cocktailBG, .whiskeyBG, .wineBG{
-        display: none;
-    }
+.cocktailBG, .whiskeyBG, .wineBG{
+display: none;
+}
 
 
 
-    .beerRow{
-        text-align: center;
-    }
+.beerRow{
+text-align: center;
+}
 .cocktailRow{
-    .drinkChoice{
-        margin-top:20px;
-        margin-bottom:20px;
-    }
-    .foodName{
+.drinkChoice{
+margin-top:20px;
+margin-bottom:20px;
+}
+.foodName{
 
-     font-size: 22px;
-    }
-    .drinkNote{
- text-indent: 0px;
-    }
-    }
+font-size: 22px;
+}
+.drinkNote{
+text-indent: 0px;
+}
+}
 }
 
 
 @media(max-width:450px){
-    #beerheading{
-        //margin-top:15px;
-    }
-    .beerRow{
+#beerheading{
+//margin-top:15px;
+}
+.beerRow{
 
-    .foodName{
-        font-size:20px;
-    line-height:32px;
-    }
-    .drinkNote{
-        font-size:14px;
-        line-height:22px;
-    }
-    }
-
-
-    .cocktailRow{
-         .foodName{
-        text-align: center;
-     }
- }
+.foodName{
+font-size:20px;
+line-height:32px;
+}
+.drinkNote{
+font-size:14px;
+line-height:22px;
+}
+}
 
 
+.cocktailRow{
+.foodName{
+text-align: center;
+}
+}
 
 
 
- .whiskeyRow{
-
- .whiskeyDrink{
-     font-size:16px;
-     line-height:25px;
-
- }
- }
 
 
- .wineRow{
+.whiskeyRow{
 
- .wineDrink{
-     font-size:16px;
-     line-height:25px;
+.whiskeyDrink{
+font-size:16px;
+line-height:25px;
 
- }
- }
+}
+}
+
+
+.wineRow{
+
+.wineDrink{
+font-size:16px;
+line-height:25px;
+
+}
+}
 
 }
 
@@ -956,19 +1080,19 @@ clear: both;
 
 
 .footerCol{
-    display: block;
-    font-size: 18px;
-    line-height: 24px;
-    height: 110px;
-    margin-bottom:55px;
+display: block;
+font-size: 18px;
+line-height: 24px;
+height: 110px;
+margin-bottom:55px;
 }
 .footerHeader{
-    font-size: 24px;
-    line-height: 28px;
-    //border-bottom:1px solid #fff;
-    text-decoration: underline;
-    margin-bottom: 10px;
-    height: auto;
+font-size: 24px;
+line-height: 28px;
+//border-bottom:1px solid #fff;
+text-decoration: underline;
+margin-bottom: 10px;
+height: auto;
 }
 .footerSMicon{
 display: block;

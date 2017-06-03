@@ -38,9 +38,7 @@
     <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        MENU
       </button>
         <!-- brand/logo image and link-->
       <a class="navbar-brand" href="index.html">
@@ -51,8 +49,11 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <li id="monlieNavCloseBtn">
+                      <a  href="#" class="collapsed"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true"> Close</a>
+                  </li>
+                  <li class="topMoblieLink">
+                    <a href="index.html">Home </a>
                   </li>
                 <li>
                     <a href="menu.html">Menu</a>
@@ -74,12 +75,11 @@
 
 
 
-<div class="secondaryNav">
+<div class="secondaryNav" id="secondaryNav">
     <a href="#beer" class="sideNavOption">Beer</a>
     <a href="#cocktaillink" class="sideNavOption">Cocktails</a>
     <a href="#whiskeylink" class="sideNavOption">Whiskey</a>
     <a href="#winelink" class="sideNavOption">Wine</a>
-
 </div>
 
 
@@ -226,7 +226,12 @@
 <!--All other js files-->
 <script src="js/allscript.js"></script>
 <script src="js/allfood.js"></script>
-<script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $('#secondaryNav a').click(function () {
+        $("body").animate({ "scrollTop": $($(this).attr('href')).offset().top-0}, 1000);
+    });
+});
 //Adds a class to the secondary nav when the screen width is below 900px
 $(document).ready(function(){
     $(window).on('resize', function() {
