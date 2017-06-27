@@ -451,9 +451,27 @@ top:0;
     padding-top: 25px;
     font-size: 24px; } }
 
+.menu-page-header {
+  background: url(../img/sportsBarPeople.jpg) no-repeat center bottom fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 300px; }
+  .menu-page-header h1 {
+    color: #fff;
+    font-weight: bold;
+    line-height: 125px; }
+
+.menuChoice {
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 10px;
+  min-height: 75px;
+  display: block; }
+
 /*end Index Styles////////////////////////////////////////////////////////////*/
 /*Menu page Styles////////////////////////////////////////////////////////////*/
-#applink {
+.appBG {
   background: url(../img/pizzaApp.jpg) no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -480,24 +498,6 @@ top:0;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-
-.menu-page-header {
-  background: url(../img/sportsBarPeople.jpg) no-repeat center bottom fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 300px; }
-  .menu-page-header h1 {
-    color: #fff;
-    font-weight: bold;
-    line-height: 125px; }
-
-.menuChoice {
-  font-family: "Ubuntu", sans-serif;
-  margin-bottom: 10px;
-  min-height: 75px;
-  display: block; }
 
 .appItems, .saladItems, .tacoItems, .burgerItems {
   display: block;

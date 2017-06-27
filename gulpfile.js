@@ -1,21 +1,22 @@
 var gulp = require('gulp');
 
+//sass
+var sass = require('gulp-sass');
 
+gulp.task('sass', function () {
+  return gulp.src('working/sass/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('working/css/'));
+});
 
-
-//var cleanCSS = require('gulp-clean-css');
-
-//gulp.task('mincss', function() {
-//  return gulp.src('working/css/*.css')
-//    .pipe(cleanCSS({compatibility: 'ie8'}))
- //   .pipe(gulp.dest('css/'));
-//});
 
 
 var cleanCSS = require('gulp-clean-css');
 var concatCss = require('gulp-concat-css');
 gulp.task('mincss', function() {
-  return gulp.src(['working/css/reset.css',
+  return gulp.src([
+                  //'working/css/scrolling-nav.css',
+                  'working/css/reset.css',
                   'working/css/style.css'])
   .pipe(concatCss("cssbundle.css"))
    .pipe(cleanCSS())
@@ -39,8 +40,11 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
 gulp.task('catjs', function () {
-  gulp.src(['working/js/contactForm.js',
-  'working/js/script.js',
+  gulp.src([
+            'working/js/scrolling-nav.js',
+            'working/js/jquery.easing.min.js',
+            'working/js/contactForm.js',
+            'working/js/script.js',
             'working/js/jquery-ui.min.js',
             'working/js/menuscript.js'])
     .pipe(concat("allscript.js"))
@@ -54,17 +58,6 @@ gulp.task('catFoodjs', function () {
     .pipe(uglify())
     .pipe(gulp.dest('js/'));
 });
-
-
-//sass
-var sass = require('gulp-sass');
-
-gulp.task('sass', function () {
-  return gulp.src('working/sass/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('working/css/'));
-});
-
 
 
 

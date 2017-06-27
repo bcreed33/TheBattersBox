@@ -76,10 +76,10 @@
 
 
 <div class="secondaryNav" id="secondaryNav">
-    <a href="#beer" class="sideNavOption">Beer</a>
-    <a href="#cocktaillink" class="sideNavOption">Cocktails</a>
-    <a href="#whiskeylink" class="sideNavOption">Whiskey</a>
-    <a href="#winelink" class="sideNavOption">Wine</a>
+    <a href="#beer" class="sideNavOption page-scroll">Beer</a>
+    <a href="#cocktaillink" class="sideNavOption page-scroll">Cocktails</a>
+    <a href="#whiskeylink" class="sideNavOption page-scroll">Whiskey</a>
+    <a href="#winelink" class="sideNavOption page-scroll">Wine</a>
 </div>
 
 
@@ -227,11 +227,7 @@
 <script src="js/allscript.js"></script>
 <script src="js/allfood.js"></script>
 <script type="text/javascript">
-$(document).ready(function () {
-    $('#secondaryNav a').click(function () {
-        $("body").animate({ "scrollTop": $($(this).attr('href')).offset().top-0}, 1000);
-    });
-});
+
 //Adds a class to the secondary nav when the screen width is below 900px
 $(document).ready(function(){
     $(window).on('resize', function() {

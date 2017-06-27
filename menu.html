@@ -80,14 +80,14 @@
 
 
 <div class="secondaryNav" id="secondaryNav">
-    <a href="#applink" class="sideNavOption">Apps</a>
-    <a href="#saladlink" class="sideNavOption">Salads</a>
-    <a href="#tacolink" class="sideNavOption">Tacos</a>
+    <a href="#applink" class="sideNavOption page-scroll">Apps</a>
+    <a href="#saladlink" class="sideNavOption page-scroll">Salads</a>
+    <a href="#tacolink" class="sideNavOption page-scroll">Tacos</a>
     <!--<a href="#hoagielink" class="sideNavOption">Hoagies</a>-->
-    <a href="#burgerlink" class="sideNavOption">Burger</a>
+    <a href="#burgerlink" class="sideNavOption page-scroll">Burger</a>
 </div>
 <a name="Linkapp" id="applink"></a>
-<div class="page-header menu-page-header" >
+<div class="page-header menu-page-header appBG">
     <div class="text-center blackOpcity">
     <h1>Menu</h1>
     </div>
@@ -211,7 +211,7 @@
 
 
 
-
+</body>
 
 
 
@@ -227,11 +227,7 @@
 
 <script type="text/javascript">
 
-$(document).ready(function () {
-    $('#secondaryNav a').click(function () {
-        $("body").animate({ "scrollTop": $($(this).attr('href')).offset().top-0}, 1000);
-    });
-});
+
 
 //Adds a class to the secondary nav when the screen width is below 900px
 $(document).ready(function(){
@@ -262,5 +258,5 @@ document.write('<script src="js/smoothScroll.js"><\/script>');
 </script>
 
 
-</body>
+
 </html>
