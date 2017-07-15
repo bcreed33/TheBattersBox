@@ -39,7 +39,7 @@ gulp.task('mincss', function() {
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
-gulp.task('catjs', function () {
+gulp.task('concatjs', function () {
   gulp.src([
             'working/js/scrolling-nav.js',
             'working/js/jquery.easing.min.js',
@@ -52,8 +52,8 @@ gulp.task('catjs', function () {
     .pipe(gulp.dest('js/'));
 });
 
-gulp.task('catFoodjs', function () {
-  gulp.src('working/json/*.js')
+gulp.task('concatFoodjs', function () {
+  gulp.src('working/menujs/*.js')
     .pipe(concat("allfood.js"))
     .pipe(uglify())
     .pipe(gulp.dest('js/'));
@@ -66,10 +66,10 @@ gulp.task('watch', function(){
     gulp.watch('working/sass/*.scss', ['sass']);
     gulp.watch('working/css/*.css', ['mincss']);
     //gulp.watch('working/img/*', ['minimg']);
-     gulp.watch('working/js/*.js', ['catjs']);
-     gulp.watch('working/json/*.js', ['catFoodjs']);
+     gulp.watch('working/js/*.js', ['concatjs']);
+     gulp.watch('working/json/*.js', ['concatFoodjs']);
 
 
 });
 
-gulp.task('default', ['sass','mincss','catjs','catFoodjs', 'watch'])
+gulp.task('default', ['sass','mincss','concatjs','concatFoodjs', 'watch'])

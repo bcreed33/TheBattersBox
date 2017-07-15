@@ -1,64 +1,64 @@
 var onTap = [
 {
 name: "Yuengling Lager",
-beertype: "Traditional Lager",
+beertype: "Traditional Lager"
 },{
 name: "Coors Light",
-beertype: "Light Beer",
+beertype: "Light Beer"
   },{
 name: "Blue Moon - Belgian White",
-beertype: "Belgian-style Beer",
+beertype: "Belgian-style Beer"
   },{
 name: "Flying Dog - Tropical IPA",
-beertype: "Tropical Belgian IPA",
+beertype: "Tropical Belgian IPA"
   },{
 name: "Founders - Rubaeus",
-beertype: "Fruit Beer Raspberry",
+beertype: "Fruit Beer Raspberry"
 }];
 var onTap2 = [
 {
 name: "Traveler - Curious Traveler",
-beertype: "Lemon Shandy",
+beertype: "Lemon Shandy"
   },{
 name: "Great Lakes - Rally Drum",
-beertype: "Red Ale",
+beertype: "Red Ale"
   },{
 name: "SweetWater - Coastal",
-beertype: "IPA w/ Pineapple",
+beertype: "IPA w/ Pineapple"
   },{
 name: "Boulder - Hola Maria",
-beertype: "Mexican-Style Blonde Ale",
+beertype: "Mexican-Style Blonde Ale"
   },{
 name: "Industry - Vernal IPA",
-beertype: "IPA w/ Hibiscus",
+beertype: "IPA w/ Hibiscus"
   }
 ];
 
 var cocktails = [
 {
 name: "Healing Hands ",
-note: "Goji berry infused vodka / blueberry juice / simple syrup / lime / thyme infused foam / activated charcoal"
+"note": "Goji berry infused vodka / blueberry juice / simple syrup / lime / thyme infused foam / activated charcoal"
 },{
 name: "Aged Manhattan ",
- note: "George Dickel rye / vermouth / Angostura & Peychaud’s / absinthe / aged 8 weeks in rye barrel"
+ "note": "George Dickel rye / vermouth / Angostura & Peychaud’s / absinthe / aged 8 weeks in rye barrel"
  },{
 name: "Grapefruit Sangria ",
- note: "White wine / sake / Patron Citronage / agave nectar / grapefruit juice / Angostura bitters / edible flower"
+ "note": "White wine / sake / Patron Citronage / agave nectar / grapefruit juice / Angostura bitters / edible flower"
  },{
 name: "Lemon Ginger Gin",
- note: "gin / ginger liqueur / sparkling wine / lemon / rimmed with szechuan button powder & pop rocks"
+ "note": "gin / ginger liqueur / sparkling wine / lemon / rimmed with szechuan button powder & pop rocks"
  },{
 name: "Menlo Park ",
-note: "Manatawny Odd Fellows Gin / Yellow Chartreuse / flamed Rosemary / absinthe / lime / simple syrup"
+"note": "Manatawny Odd Fellows Gin / Yellow Chartreuse / flamed Rosemary / absinthe / lime / simple syrup"
 },{
 name: "Old Fashioned",
- note: "Bulleit bourbon / cinnamon / orange / Amarena cherry / walnut bitters"
+ "note": "Bulleit bourbon / cinnamon / orange / Amarena cherry / walnut bitters"
  },{
 name: "The Transformer",
- note: "French lavender infused gin / pea flower tea / simple syrup / lemon / chrysanthemum & butterfly pea flowers"
+ "note": "French lavender infused gin / pea flower tea / simple syrup / lemon / chrysanthemum & butterfly pea flowers"
  },{
 name: "Spice Pear Sangria",
- note: "Red wine / pear liqueur / fall spice bitters / orange / cinnamon"
+ "note": "Red wine / pear liqueur / fall spice bitters / orange / cinnamon"
  }];
 
 
