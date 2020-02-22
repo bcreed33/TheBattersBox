@@ -11,13 +11,10 @@
 <link href="img/favicon.ico" type="image/x-icon" rel="shorcut icon">
 <title>Batters Box Bar - Drinks</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-
-
-
-<!-- Css -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/cssbundle.css" rel="stylesheet">
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/mainstylee.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -221,38 +218,18 @@
 
 
 
+
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <!--All other js files-->
-<script src="js/allscript.js"></script>
-<script src="js/allfood.js"></script>
-<script type="text/javascript">
-
-//Adds a class to the secondary nav when the screen width is below 900px
-$(document).ready(function(){
-    $(window).on('resize', function() {
-        if($(window).width() < 900) {
-            $('.secondaryNav').addClass('secondaryNavMoblie');
-
-            $(window).scroll(function(){
-                    var moblieSecNavScroll =253;
-                if($(window).scrollTop() >= moblieSecNavScroll){
-                    $('.secondaryNavMoblie').addClass("secondaryNavMobliePosition");
-                    $('.navbar').removeClass("navbar-fixed-top");
-                }else{
-                    $('.secondaryNavMoblie').removeClass("secondaryNavMobliePosition");
-                }
-            });
-        }
-    });
-});
-
+<script src="js/script.js"></script>
+<!--<script type="text/javascript">
 //Loading the smoothScroll.js only when the user
 if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent))
 document.write('<script src="js/smoothScroll.js"><\/script>');
-
-</script>
+</script>-->
 </body>
 </html>
