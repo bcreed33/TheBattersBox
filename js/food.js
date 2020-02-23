@@ -1,4 +1,5 @@
-var apps = [
+
+export const appetizer = [
     {
         name: "Small Wings",
         price: "$8.99",
@@ -32,7 +33,7 @@ var apps = [
 
 
 
-var salad = [
+const salad = [
     {
         name: "Classic 'burg",
         price: "$8.95",
@@ -55,7 +56,7 @@ var salad = [
 
 
 
-var tacos = [
+const tacos = [
     {
         name: "Chicken Taco",
         price: "$8.99",
@@ -79,7 +80,7 @@ var tacos = [
 
 
 
-var hoagies = [
+const hoagies = [
 {
         name: "French Dip",
         price: "$8.99",
@@ -101,7 +102,7 @@ var hoagies = [
 
 
 
-var burgers = [
+const burgers = [
     {
         name: "Bullet Bill",
         price: "$8.99",
@@ -121,3 +122,8 @@ var burgers = [
         note: "Chipotle black bean burger, lettuce, and tomato on wheat toast"
      }
 ];
+
+
+
+
+

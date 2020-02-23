@@ -1,15 +1,35 @@
-document.write('<script type="text/javascript" src="js/menu.js" ></script>');
-document.write('<script type="text/javascript" src="js/drinks.js" ></script>');
+//document.write('<script type="text/javascript" src="js/foood.js" ></script>');
+//document.write('<script type="text/javascript" src="js/drinks.js" ></script>');
+import * as y from 'js/food.js';
 
+//console.log(appetizer[1].name);
+const ap = appetizer.map(function (x){
+    return`
+        <div class="menuChoice"> 
+            <div class="foodName col-xs-12 col-sm-10">
+                ${x.name}   
+            </div> 
+            <div class="foodPrice col-xs-12 col-sm-2">
+                ${x.price}
+            </div>
+            <div class="foodNote col-xs-12">
+                ${x.note}
+            </div>
+        </div>
+    `
+});
+
+document.querySelector('#apps').innerHTML= ap;
 
 $(document).ready(function(){
-   var appstring = "";
+
+  /* var appstring = "";
 for(var i = 0; i < apps.length; i++){
 appstring += '<div class="menuChoice"> <div class="foodName col-xs-12 col-sm-10">' +
 apps[i].name + '</div> <div class="foodPrice col-xs-12 col-sm-2">' +
 apps[i].price + '</div> <div class="foodNote">' +
 apps[i].note + '</div></div>';}
-$("#apps").append(appstring);
+$("#apps").append(appstring);*/
 
 
    var saladstring = "";

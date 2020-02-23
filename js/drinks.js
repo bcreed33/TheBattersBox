@@ -1,4 +1,4 @@
-var onTap = [
+const onTap = [
 {
 name: "Yuengling Lager",
 beertype: "Traditional Lager"
@@ -15,7 +15,7 @@ beertype: "Tropical Belgian IPA"
 name: "Founders - Rubaeus",
 beertype: "Fruit Beer Raspberry"
 }];
-var onTap2 = [
+const onTap2 = [
 {
 name: "Traveler - Curious Traveler",
 beertype: "Lemon Shandy"
@@ -34,7 +34,7 @@ beertype: "IPA w/ Hibiscus"
   }
 ];
 
-var cocktails = [
+const cocktails = [
 {
 name: "Healing Hands ",
 "note": "Goji berry infused vodka / blueberry juice / simple syrup / lime / thyme infused foam / activated charcoal"
@@ -62,7 +62,7 @@ name: "Spice Pear Sangria",
  }];
 
 
-var americanWhiskey = [
+const americanWhiskey = [
 "Woodford Reserve",
 "Jim Beam Devil’s Cut",
 "Jack Daniel’s Gentleman Jack",
@@ -72,7 +72,7 @@ var americanWhiskey = [
 "Bird Dog",
 "Charbay S Stout Whiskey"
 ];
-var importedWhiskey = [
+const importedWhiskey = [
 "Tullamore Dew 12yr Irish",
 "Tullamore Dew Phoenix",
 "Crown Royal",
@@ -85,7 +85,7 @@ var importedWhiskey = [
 
 
 
-var redWine = [
+const redWine = [
 "Black Ridge - Zinfandel",
 "Casa di Campo - Malbec",
 "Motto - Red Blend",
@@ -95,7 +95,7 @@ var redWine = [
 ];
 
 
-var whiteWine = [
+const whiteWine = [
 "Bonvia - Moscato",
 "Broadbent - Vinho Verde",
 "Guenoc - Chardonnay",
