@@ -1,9 +1,8 @@
-//document.write('<script type="text/javascript" src="js/foood.js" ></script>');
-//document.write('<script type="text/javascript" src="js/drinks.js" ></script>');
-import * as y from 'js/food.js';
 
-//console.log(appetizer[1].name);
-const ap = appetizer.map(function (x){
+import {appetizer, salad, tacos, hoagies, burgers} from "./food.js";
+
+
+const appetizerList = appetizer.map(function (x){
     return`
         <div class="menuChoice"> 
             <div class="foodName col-xs-12 col-sm-10">
@@ -15,21 +14,85 @@ const ap = appetizer.map(function (x){
             <div class="foodNote col-xs-12">
                 ${x.note}
             </div>
-        </div>
-    `
+        </div>`
 });
+document.querySelector('#apps').innerHTML= appetizerList;
 
-document.querySelector('#apps').innerHTML= ap;
 
-$(document).ready(function(){
+const saladList = salad.map(function (x){
+    return`
+        <div class="menuChoice"> 
+            <div class="foodName col-xs-12 col-sm-10">
+                ${x.name}   
+            </div> 
+            <div class="foodPrice col-xs-12 col-sm-2">
+                ${x.price}
+            </div>
+            <div class="foodNote col-xs-12">
+                ${x.note}
+            </div>
+        </div>`
+});
+document.querySelector('#salad').innerHTML= saladList;
 
-  /* var appstring = "";
+
+const tacoList = tacos.map(function (x){
+    return`
+        <div class="menuChoice"> 
+            <div class="foodName col-xs-12 col-sm-10">
+                ${x.name}   
+            </div> 
+            <div class="foodPrice col-xs-12 col-sm-2">
+                ${x.price}
+            </div>
+            <div class="foodNote col-xs-12">
+                ${x.note}
+            </div>
+        </div>`
+});
+document.querySelector('#taco').innerHTML= tacoList;
+
+
+const burgerList = burgers.map(function (x){
+    return`
+        <div class="menuChoice"> 
+            <div class="foodName col-xs-12 col-sm-10">
+                ${x.name}   
+            </div> 
+            <div class="foodPrice col-xs-12 col-sm-2">
+                ${x.price}
+            </div>
+            <div class="foodNote col-xs-12">
+                ${x.note}
+            </div>
+        </div>`
+});
+document.querySelector('#burger').innerHTML= burgerList;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* $(document).ready(function(){
+
+ var appstring = "";
 for(var i = 0; i < apps.length; i++){
 appstring += '<div class="menuChoice"> <div class="foodName col-xs-12 col-sm-10">' +
 apps[i].name + '</div> <div class="foodPrice col-xs-12 col-sm-2">' +
 apps[i].price + '</div> <div class="foodNote">' +
 apps[i].note + '</div></div>';}
-$("#apps").append(appstring);*/
+$("#apps").append(appstring);
 
 
    var saladstring = "";
@@ -61,7 +124,7 @@ $("#burger").append(burgersstring);
 
 
 
-//////// Loops for the drink Page
+
 
 var onTapString = "";
 for(var i = 0; i < onTap.length; i++){
@@ -114,7 +177,7 @@ $("#whiteWine").append(whiteWineString);
 
 
 
-
+*/
 
 //Adds a class to the secondary nav when the screen width is below 900px
 $(document).ready(function(){

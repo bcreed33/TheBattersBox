@@ -1,5 +1,5 @@
 
-export const appetizer = [
+const appetizer = [
     {
         name: "Small Wings",
         price: "$8.99",
@@ -30,8 +30,6 @@ export const appetizer = [
         note: "Cheddar cheese sauce, provolone, mozzarella, bacon, chives. Served with ranch dressing. "
      }
 ];
-
-
 
 const salad = [
     {
@@ -123,6 +121,9 @@ const burgers = [
      }
 ];
 
+
+
+export { appetizer, salad, tacos, hoagies, burgers };
 
 
 
