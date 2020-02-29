@@ -95,8 +95,8 @@
  <div class="containe-fluid section1">
      <div class="container">
               <h2 id="beerheading">On Tap</h2> <hr class="hrcolor"/>
-    <div id="onTap" class="beerRow col-xs-12 col-sm-6"></div>
-    <div id="onTap2" class="beerRow col-xs-12 col-sm-6"></div>
+    <div id="onTapList" class="beerRow col-xs-12 col-sm-6"></div>
+    <div id="onTap2List" class="beerRow col-xs-12 col-sm-6"></div>
      </div>
     </div>
 
@@ -108,7 +108,7 @@
 <div class="containe-fluid section2">
 <div class="container">
 <h2>Cocktails</h2> <hr class="hrcolor"/>
-<div id="ctail" class="cocktailRow col-xs-12 col-sm-9"></div>
+<div id="cocktailList" class="cocktailRow col-xs-12 col-sm-9"></div>
 </div>
 </div>
 
@@ -121,11 +121,13 @@
 <div class="container">
 <h2>The Whiskey Shelf</h2>
 <hr class="hrcolor"/>
-<div id="americanWhiskey" class="whiskeyRow col-xs-12 col-sm-6">
+<div class="whiskeyRow col-xs-12 col-sm-6">
 <h2>American</h2>
+<div id="americanWhiskeyList" class="whiskeyDrink"></div>
 </div>
-<div id="importedWhiskey" class="whiskeyRow col-xs-12 col-sm-6">
+<div class="whiskeyRow col-xs-12 col-sm-6">
 <h2>Imported</h2>
+<div id="importedWhiskeyList" class="whiskeyDrink"></div>
 </div>
 </div>
 </div>
@@ -143,9 +145,11 @@
 <hr class="hrcolor"/>
 <div id="redWine" class="wineRow col-xs-12 col-sm-6">
 <h2>Red Wine</h2>
+<div id="redWineList" class="wineDrink"></div>
 </div>
 <div id="whiteWine" class="wineRow col-xs-12 col-sm-6">
 <h2>White Wine</h2>
+<div id="whiteWineList" class="wineDrink"></div>
 </div>
 </div>
 </div>
@@ -225,6 +229,7 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <!--All other js files-->
+<script src="js/drinkscript.js" type = "module" ></script>
 <script src="js/script.js"></script>
 <!--<script type="text/javascript">
 //Loading the smoothScroll.js only when the user

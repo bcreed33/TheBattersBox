@@ -1,7 +1,51 @@
 
+import { food } from "./food.js";
+food.map(function (x){
+    const foodID = x.id;
+    const foodItems = x.items;
+    const foodlist = foodItems.map(function (z){
+        return`
+            <div class="menuChoice"> 
+                <div class="foodName col-xs-12 col-sm-10">
+                    ${z.name}   
+                </div> 
+                <div class="foodPrice col-xs-12 col-sm-2">
+                    ${z.price}
+                </div>
+                <div class="foodNote col-xs-12">
+                    ${z.note}
+                </div>
+            </div>`
+    });
+    document.querySelector(`#${foodID}`).innerHTML= foodlist;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
 import {appetizer, salad, tacos, hoagies, burgers} from "./food.js";
-
-
 const appetizerList = appetizer.map(function (x){
     return`
         <div class="menuChoice"> 
@@ -82,7 +126,7 @@ document.querySelector('#burger').innerHTML= burgerList;
 
 
 
-
+////This is what I wrote years ago. 
 
  /* $(document).ready(function(){
 
@@ -121,10 +165,6 @@ burgers[i].name + '</div> <div class="foodPrice col-xs-12 col-sm-2">' +
 burgers[i].price + '</div> <div class="foodNote col-xs-12">' +
 burgers[i].note + '</div></div>';}
 $("#burger").append(burgersstring);
-
-
-
-
 
 var onTapString = "";
 for(var i = 0; i < onTap.length; i++){
@@ -174,8 +214,6 @@ whiteWineString += '<div class="wineDrink">' + whiteWine[i] + '</div></div>';}
 $("#whiteWine").append(whiteWineString);
 
 });
-
-
 
 */
 
