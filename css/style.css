@@ -394,8 +394,8 @@ top:0;
 
 .homePageIcon {
   display: block;
-  width: 175px;
-  margin: 0 auto; }
+  width: 135px;
+  margin: 15px auto; }
 
 .quotesImgBG {
   background-image: url(../img/dark_wood.png);
@@ -814,7 +814,8 @@ input:focus, textarea:focus {
 
 .footerSMicon {
   display: block;
-  width: 100px; }
+  width: 75px;
+  margin-top: 10px; }
 
 #footer {
   min-height: 250px;

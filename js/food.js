@@ -2,7 +2,7 @@ const food = [
     {
         id : "appetizerList",
         items : [{
-                name: "Small Wings",
+                name: "Wings",
                 price: "$8.99",
                 note: "Dry Rub:  Ranch, Season Salt, Chili Lime, Cajun, Garlic Parmesan - Sauce: Garlic Parmesan, BBQ, Teriyaki, Sweet Thai Chili, Mild, Buffalo, Sriracha"
             },{

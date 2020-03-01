@@ -1,23 +1,11 @@
-document.write('<script type="text/javascript" src="js/menuscript.js" ></script>');
+window.addEventListener('scroll', function(e){
+  const scrolled = window.pageYOffset;
+  const logo = this.document.querySelector('.logo');
+  //const beer = this.document.querySelector('.beer');
+  //const burger = this.document.querySelector('.burger');
+  logo.style.transform=`translate3d(0px , ${scrolled/5}%, 0px)`
 
-  
-  
-  //Parallax effect in the hero
-    $(window).scroll(function(){
-    var wScroll = $(this).scrollTop();
-
-    $('.logo').css({
-        'transform': 'translate(0px,'+ wScroll/2 +'%)'
-    });
-
-            $('.beer').css({
-        'transform': 'translate(0px, -'+ wScroll/40 +'%)'
-    });
-            $('.burger').css({
-        'transform': 'translate(0px, '+ wScroll/4 +'%)'
-    });
- });
-
+})
 
 
 
@@ -36,9 +24,6 @@ $(document).ready(function(){
 });
 
 
-
-
-
 //stick nav script
 var navBar = $('.navbar');
 var stickyNav = navBar.offset().top;
@@ -50,10 +35,6 @@ $(window).scroll(function(){
   }
 });
 
-
-
-
-
 //Makes the secondary nav pop out after the user scrolls
 
 $(window).scroll(function(){
@@ -61,16 +42,4 @@ var topscroll =25;
 if($(window).scrollTop() >= topscroll){
 $('.secondaryNav').addClass("secondaryNavPosition");
 }
-});
-
-
-
-
-
-
-
-
-
-$(window).scroll( function() {
-  console.log( $(this).scrollTop());
 });
