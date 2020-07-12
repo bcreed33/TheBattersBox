@@ -13,14 +13,14 @@ beerandCocktails.map(function (x){
              ${z.note} 
             </p>
         </div> `
-    });
+    }).join('');
     document.querySelector(`#${foodID}`).innerHTML= drinkList;
 });
 
 whiskeyAndWine.map(function (x){
     const foodID = x.id;
     const foodItems = x.items;
-    const drinkList = foodItems.map(z => `<p>${z}</p>`);
+    const drinkList = foodItems.map(z => `<p>${z}</p>`).join('');
     document.querySelector(`#${foodID}`).innerHTML= drinkList;
 });
 
@@ -48,22 +48,3 @@ whiskeyAndWine.map(function (x){
 
 
 
-
-//Adds a class to the secondary nav when the screen width is below 900px
-$(document).ready(function(){
-   $(window).on('resize', function() {
-       if($(window).width() < 900) {
-           $('.secondaryNav').addClass('secondaryNavMoblie');
-
-           $(window).scroll(function(){
-                   var moblieSecNavScroll =253;
-               if($(window).scrollTop() >= moblieSecNavScroll){
-                   $('.secondaryNavMoblie').addClass("secondaryNavMobliePosition");
-                   $('.navbar').removeClass("navbar-fixed-top");
-               }else{
-                   $('.secondaryNavMoblie').removeClass("secondaryNavMobliePosition");
-               }
-           });
-       }
-   });
-});

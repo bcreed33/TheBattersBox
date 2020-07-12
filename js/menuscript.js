@@ -16,30 +16,9 @@ food.map(function (x){
                     ${z.note}
                 </div>
             </div>`
-    });
+    }).join('');
     document.querySelector(`#${foodID}`).innerHTML= foodlist;
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*
@@ -218,6 +197,8 @@ $("#whiteWine").append(whiteWineString);
 */
 
 //Adds a class to the secondary nav when the screen width is below 900px
+
+/*
 $(document).ready(function(){
    $(window).on('resize', function() {
        if($(window).width() < 900) {
@@ -235,3 +216,4 @@ $(document).ready(function(){
        }
    });
 });
+*/

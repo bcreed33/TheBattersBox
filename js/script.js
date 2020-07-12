@@ -43,3 +43,26 @@ if($(window).scrollTop() >= topscroll){
 $('.secondaryNav').addClass("secondaryNavPosition");
 }
 });
+
+
+
+
+//Adds a class to the secondary nav when the screen width is below 900px
+$(document).ready(function(){
+  $(window).on('resize', function() {
+      if($(window).width() < 900) {
+          $('.secondaryNav').addClass('secondaryNavMoblie');
+
+          $(window).scroll(function(){
+                  var moblieSecNavScroll =253;
+              if($(window).scrollTop() >= moblieSecNavScroll){
+                  $('.secondaryNavMoblie').addClass("secondaryNavMobliePosition");
+                  $('.navbar').removeClass("navbar-fixed-top");
+              }else{
+                  $('.secondaryNavMoblie').removeClass("secondaryNavMobliePosition");
+              }
+          });
+      }
+  });
+});
+
