@@ -25,7 +25,7 @@
 /*end of sections/////////////////////////////////////////////////////////////*/
 /*Global styles///////////////////////////////////////////////////////////////*/
 h1 {
-  font-size: 4em;
+  font-size: 3.5em;
   text-decoration: underline;
   font-family: "Bitter", serif; }
 
@@ -361,7 +361,15 @@ top:0;
 /*end hero section////////////////////////////////////////////////////////////*/
 /*Index Styles////////////////////////////////////////////////////////////////*/
 .section1 h1 {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+line-height: 80px; }
+.introCopy{
+  max-width: 600px;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 30px;
+  font-size: 18px;
+}
 
 .specialsSection {
   margin-top: 60px;
@@ -390,7 +398,12 @@ top:0;
 .theDaySpecial {
   margin: 15px 0; }
   .theDaySpecial h3 {
-    margin: 15px 0; }
+    margin: 15px 0;
+  font-size: 1.25em;
+line-height: 35px; }
+.theDaySpecial p{
+  line-height: 24px;
+}
 
 .homePageIcon {
   display: block;
@@ -445,14 +458,15 @@ top:0;
   .section1, .section2 {
     padding: 25xp 0; }
     .section1 h1, .section2 h1 {
-      font-size: 2.5em;
+      font-size: 2em;
       line-height: 50px; }
   .personQuote {
     padding-top: 25px;
     font-size: 24px; } }
 
 .menu-page-header {
-  background: url(../img/sportsBarPeople.jpg) no-repeat center bottom fixed;
+  background: url(../img/sportsBarPeople.jpg) no-repeat;
+  background-position-y: 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -462,6 +476,20 @@ top:0;
     color: #fff;
     font-weight: bold;
     line-height: 125px; }
+
+    .contact-page-header {
+      background: url(../img/piratesBar.jpg) no-repeat;
+      background-position-y: 50%;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 300px; }
+      .contact-page-header h1 {
+        color: #fff;
+        font-weight: bold;
+        line-height: 125px; }
+
 
 .menuChoice {
   font-family: "Ubuntu", sans-serif;
@@ -507,7 +535,8 @@ top:0;
     float: left;
     display: block;
     font-size: 26px;
-    line-height: 36px; }
+    line-height: 36px;
+    padding-top: 10px; }
   .appItems .foodPrice, .saladItems .foodPrice, .tacoItems .foodPrice, .burgerItems .foodPrice {
     float: right;
     display: block;
@@ -519,7 +548,8 @@ top:0;
     font-size: 16px;
     line-height: 20px;
     text-indent: 20px;
-    letter-spacing: .2px; }
+    letter-spacing: .2px;
+  line-height: 22px; }
 
 @media (max-width: 768px) {
   .saladlink, .tacolink, .burgerlink {
@@ -547,7 +577,8 @@ top:0;
 /*end menu Styles/////////////////////////////////////////////////////////////*/
 /*drink Styles////////////////////////////////////////////////////////////////*/
 #beer {
-  background: url(../img/beerTap.jpg) no-repeat center bottom fixed;
+  background: url(../img/beerTap.jpg) no-repeat;
+  background-position-y: 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -583,7 +614,8 @@ top:0;
 
 .beerRow .foodName {
   font-size: 26px;
-  line-height: 36px; }
+  line-height: 36px; 
+  padding-top: 15px;}
 
 .beerRow .drinkNote {
   font-size: 18px;
@@ -598,7 +630,8 @@ top:0;
     margin-bottom: 10px; }
   .cocktailRow .foodName {
     font-size: 26px;
-    line-height: 32px; }
+    line-height: 32px;
+    padding-top: 15px; }
   .cocktailRow .drinkNote {
     font-size: 14px;
     line-height: 16px;
@@ -615,6 +648,9 @@ top:0;
     font-size: 20px;
     line-height: 30px;
     text-align: center; }
+    .whiskeyRow .whiskeyDrink p{
+      padding-top: 10px;
+    }
 
 .wineRow {
   margin-bottom: 20px; }
@@ -625,6 +661,9 @@ top:0;
     font-size: 20px;
     line-height: 30px;
     text-align: center; }
+    .wineRow .wineDrink  p{
+      padding-top: 10px;
+    }
 
 @media (max-width: 768px) {
   .cocktailBG, .whiskeyBG, .wineBG {
@@ -660,18 +699,28 @@ top:0;
 .cateringPara {
   display: block;
   margin-bottom: 25px; }
+  .cateringPara h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  padding-bottom: 5px; }
+.cateringPara p{
+  line-height: 22px;
+  font-size: 14px;
+}
 
 .caterList {
   margin-top: 20px; }
-  .caterList h3 {
+  .caterList h4 {
     margin-top: 15px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-size: 24px; }
   .caterList ul li {
     font-family: "Ubuntu", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 19px;
     letter-spacing: .5px;
-    text-indent: 25px; }
+    text-indent: 25px;
+  line-height: 26px; }
 
 .eventbtn {
   display: block;
@@ -769,11 +818,16 @@ input:focus, textarea:focus {
 
 .hoursInfoSection {
   margin: 20px 0; }
+  .hoursInfoSection h4{
+    font-size: 22px;
+    padding-bottom: 5px;
+  }
   .hoursInfoSection ul {
     margin-top: 5px;
-    /*text-indent: 15px;*/ }
+    font-size: 18px;
+    text-indent: 5px; }
   .hoursInfoSection li {
-    line-height: 24px; }
+    line-height: 26px; }
 
 @media (max-width: 768px) {
   .hoursInfoSection ul i {
@@ -818,7 +872,7 @@ input:focus, textarea:focus {
   margin-top: 10px; }
 
 #footer {
-  min-height: 250px;
+  min-height: 350px;
   padding: 50px 0;
   background-color: #2e2e2e;
   color: white;
