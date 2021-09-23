@@ -124,7 +124,7 @@ li {
     border-bottom: #000 solid 7px;
     color: #2C4251; }
 
-.navbar-brand > img {
+.  > img {
   display: block;
   width: 200px; }
 
@@ -236,21 +236,21 @@ top:0;
     z-index: 99999;
     transition: all .35s ease;
     padding: 10px 25px; }
-  .navbar-header button {
+  .    button {
     background-color: #2C4251;
     font-family: "Ubuntu", sans-serif;
     width: 150px;
     height: 45px; }
-  .navbar-header button:hover {
+  .    button:hover {
     background-color: #2C5C67; }
-  .navbar-header button:focus {
+  .    button:focus {
     background-color: #2C5C67; } }
 
 @media (max-width: 450px) {
-  .navbar-brand > img {
+  .  > img {
     margin-top: 7px;
     width: 130px; }
-  .navbar-header button {
+  .    button {
     width: 70px; }
   .sideNavOption {
     width: 50%;
@@ -260,7 +260,7 @@ top:0;
 
 /*end of Nav styles////////////////////////////////////////////////////////*/
 /*hero section////////////////////////////////////////////////////////////////*/
-.navbar-brand {
+.  {
   padding: 10px 15px !important; }
 
 #heroBackgroundImage1 {
